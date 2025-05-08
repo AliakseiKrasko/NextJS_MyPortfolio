@@ -5,22 +5,18 @@ import {useState} from "react";
 import s from"./DataPicker.module.css"
 
 export function MyDatePicker() {
-    const [selectedRange, setSelectedRange] = useState<{ from?: Date, to?: Date }>({});
-
-    const handleSelect = (dateRange: { from?: Date, to?: Date }) => {
-        setSelectedRange(dateRange);
-    };
+    const [selected, setSelected] = useState<Date>();
 
     return (
         <DayPicker
             showOutsideDays
             animate className={s.customAnimate}
-            mode="range"
-            selected={selectedRange}
-            onSelect={handleSelect}
+            mode="single"
+            selected={selected}
+            onSelect={setSelected}
             footer={
-                selectedRange.from && selectedRange.to
-                    ? `You picked from ${selectedRange.from.toLocaleDateString()} to ${selectedRange.to.toLocaleDateString()}.`
+                selected
+                    ? `You picked ${selected.toLocaleDateString()}.`
                     : "Please pick a date."
             }
         />
