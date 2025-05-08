@@ -1,17 +1,21 @@
 "use client";
-import { DayPicker } from "react-day-picker";
+import {DayPicker} from "react-day-picker";
 import "react-day-picker/style.css";
 import {useState} from "react";
-import s from"./DataPicker.module.css"
+import './../../../app/globals.css';
+
 
 export function MyDatePicker() {
+
+
     const [selected, setSelected] = useState<Date>();
 
     return (
         <DayPicker
             showOutsideDays
+            weekStartsOn={1}
             disabled={{ before: new Date() }}
-            animate className={s.customAnimate}
+            animate
             mode="single"
             selected={selected}
             onSelect={setSelected}
@@ -20,6 +24,7 @@ export function MyDatePicker() {
                     ? `You picked ${selected.toLocaleDateString()}.`
                     : "Please pick a date."
             }
+            className="rdp-root"
         />
     );
 }

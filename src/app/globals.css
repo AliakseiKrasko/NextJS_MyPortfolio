@@ -52,3 +52,15 @@ footer {
     padding: 20px 20px;
     border: 1px solid var(--foreground);
 }
+
+.rdpp-root {
+    --rdp-accent-color: indigo;
+    --rdp-accent-background-color: #30d6b7;
+}
+
+.rdp-root {
+    --rdp-accent-color: blue; /* Use blue as the accent color. */
+}
+[data-theme="dark"] .rdp-root {
+    --rdp-today-color: yellow; /* Use yellow as the accent color in dark mode. */
+}
