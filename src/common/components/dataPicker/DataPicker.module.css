@@ -1,0 +1,4 @@
+.customAnimate {
+    --rdp-animation_duration: 0.4s; /* Change the duration of the transition. */
+    --rdp-animation_timing: ease-in; /* Choose a different timing function. */
+}

@@ -2,18 +2,22 @@
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/style.css";
 import {useState} from "react";
+import s from"./DataPicker.module.css"
 
 export function MyDatePicker() {
     const [selected, setSelected] = useState<Date>();
 
     return (
         <DayPicker
-            animate
+            showOutsideDays
+            animate className={s.customAnimate}
             mode="single"
             selected={selected}
             onSelect={setSelected}
             footer={
-                selected ? `Selected: ${selected.toLocaleDateString()}` : "Pick a day."
+                selected
+                    ? `You picked ${selected.toLocaleDateString()}.`
+                    : "Please pick a date."
             }
         />
     );
