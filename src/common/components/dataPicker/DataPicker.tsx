@@ -10,6 +10,7 @@ export function MyDatePicker() {
     return (
         <DayPicker
             showOutsideDays
+            disabled={{ before: new Date() }}
             animate className={s.customAnimate}
             mode="single"
             selected={selected}
