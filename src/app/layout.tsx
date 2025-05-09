@@ -3,7 +3,9 @@
 import "./globals.css";
 import {MyDatePicker} from "@/common/components/dataPicker/DataPicker";
 import Select from "@/common/components/select/Select";
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
+import {Apple, Banana} from "lucide-react";
+import CustomSelect from "@/common/components/select/Select";
 
 
 
@@ -14,11 +16,9 @@ export default function RootLayout({
                                    }: Readonly<{
     children: React.ReactNode;
 }>) {
-    const selectRef = useRef<HTMLSelectElement>(null);
+    const [fruit, setFruit] = useState('apple');
 
-    useEffect(() => {
-        selectRef.current?.focus(); // пример использования
-    }, []);
+
     return (
         <html lang="en">
         <body>
@@ -30,13 +30,17 @@ export default function RootLayout({
             {/* Основной контент */}
             <main>
                 <MyDatePicker />
-                <Select
-                    ref={selectRef}
-                    options={[
-                        { value: 'apple', label: 'Apple' },
-                        { value: 'banana', label: 'Banana' },
-                    ]}
-                />
+                <div className="p-4">
+                    <CustomSelect
+                        value={fruit}
+                        onChange={setFruit}
+                        options={[
+                            { value: 'apple', label: 'Apple', icon: <Apple className="w-4 h-4" /> },
+                            { value: 'banana', label: 'Banana', icon: <Banana className="w-4 h-4" /> },
+                        ]}
+                    />
+                    <p className="mt-2">Selected: {fruit}</p>
+                </div>
                 {children}
             </main>
 
