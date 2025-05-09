@@ -64,3 +64,36 @@ footer {
 [data-theme="dark"] .rdp-root {
     --rdp-today-color: yellow; /* Use yellow as the accent color in dark mode. */
 }
+
+
+.SelectTrigger {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SelectIcon {
+    margin-left: 8px;
+}
+
+.SelectContent {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.SelectItem {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.SelectItem:hover {
+    background-color: #e6e6e6;
+}
