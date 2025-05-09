@@ -31,7 +31,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                         </Select.Icon>
                     </Select.Trigger>
                     <Select.Portal>
-                        <Select.Content className="SelectContent">
+                        <Select.Content
+                            className="SelectContent"
+                            position="popper"
+                            side="bottom"
+                            align="start"
+                        >
                             <Select.ScrollUpButton className="SelectScrollButton">
                                 <ChevronDownIcon />
                             </Select.ScrollUpButton>

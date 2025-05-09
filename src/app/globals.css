@@ -67,13 +67,16 @@ footer {
 
 
 .SelectTrigger {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    width: 200px;           /* ширина селекта */
+    height: 40px;           /* высота */
+    padding: 0 12px;        /* внутренние отступы */
+    font-size: 16px;        /* размер текста */
+    border: 1px solid #ccc; /* граница */
+    border-radius: 6px;     /* скругление */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
 }
 
 .SelectIcon {
@@ -81,13 +84,16 @@ footer {
 }
 
 .SelectContent {
-    background-color: #f0f0f0;
+    width: 200px; /* автоматически совпадает с шириной Trigger */
+    max-height: 250px;                        /* ограничение по высоте */
+    background-color: white;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 5px;
-    max-height: 200px;
-    overflow-y: auto;
+    border-radius: 6px;
+    overflow: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* важно, чтобы окно было поверх других элементов */
 }
+
 
 .SelectItem {
     padding: 10px;
