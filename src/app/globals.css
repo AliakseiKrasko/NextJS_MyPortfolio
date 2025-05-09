@@ -69,14 +69,14 @@ footer {
 .SelectTrigger {
     width: 200px;           /* ширина селекта */
     height: 40px;           /* высота */
-    padding: 0 12px;        /* внутренние отступы */
+    padding: 0 15px;        /* внутренние отступы */
     font-size: 16px;        /* размер текста */
-    border: 1px solid #ccc; /* граница */
-    border-radius: 6px;     /* скругление */
+    border: 1px solid #ffffff; /* граница */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: black;
+    color: white;
 }
 
 .SelectIcon {
@@ -87,9 +87,9 @@ footer {
     width: 200px; /* автоматически совпадает с шириной Trigger */
     max-height: 250px;
     padding:  0 15px;
-    background-color: white;
+    background-color: black;
+    color: white;
     border: 1px solid #ccc;
-    border-radius: 6px;
     overflow: auto;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     z-index: 100; /* важно, чтобы окно было поверх других элементов */
@@ -102,5 +102,5 @@ footer {
 }
 
 .SelectItem:hover {
-    background-color: #e6e6e6;
+    background-color: #ffffff;
 }
