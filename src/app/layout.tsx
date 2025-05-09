@@ -5,6 +5,7 @@ import {MyDatePicker} from "@/common/components/dataPicker/DataPicker";
 import * as Select from '@radix-ui/react-select';
 import {useState} from "react";
 import {ChevronDownIcon} from "@radix-ui/react-icons";
+import { FaApple } from "react-icons/fa";
 
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
                 <Select.Root value={fruit} onValueChange={setFruit}>
                     <Select.Trigger className="SelectTrigger" aria-label="Select a fruit">
+                        <FaApple className="mr-2" />
                         <Select.Value placeholder="Select a fruit…" />
                         <Select.Icon className="SelectIcon">
                             <ChevronDownIcon />

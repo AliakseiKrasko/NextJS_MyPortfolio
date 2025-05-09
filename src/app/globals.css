@@ -71,12 +71,12 @@ footer {
     height: 40px;           /* высота */
     padding: 0 15px;        /* внутренние отступы */
     font-size: 16px;        /* размер текста */
-    border: 1px solid #ffffff; /* граница */
+    border: 1px solid black; /* граница */
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: black;
-    color: white;
+    justify-content: space-around;
+    cursor: pointer;
+    background-color: white;
 }
 
 .SelectIcon {
@@ -87,8 +87,7 @@ footer {
     width: 200px; /* автоматически совпадает с шириной Trigger */
     max-height: 250px;
     padding:  0 15px;
-    background-color: black;
-    color: white;
+    background-color: white;
     border: 1px solid #ccc;
     overflow: auto;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
