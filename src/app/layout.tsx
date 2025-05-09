@@ -52,6 +52,18 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                                     <Select.Item value="orange">
                                         <Select.ItemText>Orange</Select.ItemText>
                                     </Select.Item>
+                                    <Select.Item value="1">
+                                        <Select.ItemText>Orange</Select.ItemText>
+                                    </Select.Item>
+                                    <Select.Item value="2">
+                                        <Select.ItemText>Orange</Select.ItemText>
+                                    </Select.Item>
+                                    <Select.Item value="3">
+                                        <Select.ItemText>Orange</Select.ItemText>
+                                    </Select.Item>
+                                    <Select.Item value="4">
+                                        <Select.ItemText>Orange</Select.ItemText>
+                                    </Select.Item>
                                 </Select.Group>
                             </Select.Viewport>
                             <Select.ScrollDownButton className="SelectScrollButton">

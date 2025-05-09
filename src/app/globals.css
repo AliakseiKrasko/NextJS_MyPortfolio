@@ -85,7 +85,8 @@ footer {
 
 .SelectContent {
     width: 200px; /* автоматически совпадает с шириной Trigger */
-    max-height: 250px;                        /* ограничение по высоте */
+    max-height: 250px;
+    padding:  0 15px;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 6px;
