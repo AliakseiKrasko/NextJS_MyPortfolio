@@ -1,14 +1,33 @@
 'use client';
 import * as React from "react";
+import classnames from "classnames";
 import {
     CheckIcon,
     ChevronDownIcon,
     ChevronUpIcon,
 } from "@radix-ui/react-icons";
 import "./styles.css";
-import { Select } from "@radix-ui/react-select";
+import * as Select from '@radix-ui/react-select';
 
-
+// Компонент SelectItem с правильной типизацией
+const SelectItem = React.forwardRef<
+    HTMLDivElement, // Тип элемента, к которому прикрепляется ref
+    { value: string; children: React.ReactNode; className?: string } // Пропсы для SelectItem (с className)
+>(({ children, value, className, ...props }, forwardedRef) => {
+    return (
+        <Select.Item
+            className={classnames("SelectItem", className)}
+            {...props}
+            value={value}
+            ref={forwardedRef}
+        >
+            <Select.ItemText>{children}</Select.ItemText>
+            <Select.ItemIndicator className="SelectItemIndicator">
+                <CheckIcon />
+            </Select.ItemIndicator>
+        </Select.Item>
+    );
+});
 
 const SelectDemo = () => (
     <Select.Root>
@@ -39,7 +58,7 @@ const SelectDemo = () => (
                         <Select.Label className="SelectLabel">Vegetables</Select.Label>
                         <SelectItem value="aubergine">Aubergine</SelectItem>
                         <SelectItem value="broccoli">Broccoli</SelectItem>
-                        <SelectItem value="carrot" disabled>
+                        <SelectItem value="carrot">
                             Carrot
                         </SelectItem>
                         <SelectItem value="courgette">Courgette</SelectItem>
@@ -62,23 +81,6 @@ const SelectDemo = () => (
             </Select.Content>
         </Select.Portal>
     </Select.Root>
-);
-
-const SelectItem = React.forwardRef(
-    ({ children, className, ...props }, forwardedRef) => {
-        return (
-            <Select.Item
-                className={classnames("SelectItem", className)}
-                {...props}
-                ref={forwardedRef}
-            >
-                <Select.ItemText>{children}</Select.ItemText>
-                <Select.ItemIndicator className="SelectItemIndicator">
-                    <CheckIcon />
-                </Select.ItemIndicator>
-            </Select.Item>
-        );
-    },
 );
 
 export default SelectDemo;
