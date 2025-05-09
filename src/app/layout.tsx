@@ -1,5 +1,10 @@
+'use client';
+
 import "./globals.css";
 import {MyDatePicker} from "@/common/components/dataPicker/DataPicker";
+import Select from "@/common/components/select/Select";
+import {useEffect, useRef} from "react";
+
 
 
 
@@ -9,6 +14,11 @@ export default function RootLayout({
                                    }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const selectRef = useRef<HTMLSelectElement>(null);
+
+    useEffect(() => {
+        selectRef.current?.focus(); // пример использования
+    }, []);
     return (
         <html lang="en">
         <body>
@@ -20,6 +30,13 @@ export default function RootLayout({
             {/* Основной контент */}
             <main>
                 <MyDatePicker />
+                <Select
+                    ref={selectRef}
+                    options={[
+                        { value: 'apple', label: 'Apple' },
+                        { value: 'banana', label: 'Banana' },
+                    ]}
+                />
                 {children}
             </main>
 

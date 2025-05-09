@@ -53,7 +53,7 @@ footer {
     border: 1px solid var(--foreground);
 }
 
-.rdpp-root {
+.rdp-root {
     --rdp-accent-color: indigo;
     --rdp-accent-background-color: #30d6b7;
 }
