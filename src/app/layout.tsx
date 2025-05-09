@@ -2,20 +2,12 @@
 
 import "./globals.css";
 import {MyDatePicker} from "@/common/components/dataPicker/DataPicker";
-import Select from "@/common/components/select/Select";
-import {useEffect, useRef, useState} from "react";
-import {Apple, Banana} from "lucide-react";
-import CustomSelect from "@/common/components/select/Select";
+import * as Select from '@radix-ui/react-select';
+import {useState} from "react";
+import {ChevronDownIcon} from "@radix-ui/react-icons";
 
 
-
-
-
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
-    children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
     const [fruit, setFruit] = useState('apple');
 
 
@@ -30,17 +22,41 @@ export default function RootLayout({
             {/* Основной контент */}
             <main>
                 <MyDatePicker />
-                <div className="p-4">
-                    <CustomSelect
-                        value={fruit}
-                        onChange={setFruit}
-                        options={[
-                            { value: 'apple', label: 'Apple', icon: <Apple className="w-4 h-4" /> },
-                            { value: 'banana', label: 'Banana', icon: <Banana className="w-4 h-4" /> },
-                        ]}
-                    />
-                    <p className="mt-2">Selected: {fruit}</p>
-                </div>
+
+                <Select.Root value={fruit} onValueChange={setFruit}>
+                    <Select.Trigger className="SelectTrigger" aria-label="Select a fruit">
+                        <Select.Value placeholder="Select a fruit…" />
+                        <Select.Icon className="SelectIcon">
+                            <ChevronDownIcon />
+                        </Select.Icon>
+                    </Select.Trigger>
+                    <Select.Portal>
+                        <Select.Content className="SelectContent">
+                            <Select.ScrollUpButton className="SelectScrollButton">
+                                <ChevronDownIcon />
+                            </Select.ScrollUpButton>
+                            <Select.Viewport>
+                                <Select.Group>
+                                    <Select.Label>Fruits</Select.Label>
+                                    <Select.Item value="apple">
+                                        <Select.ItemText>Apple</Select.ItemText>
+                                    </Select.Item>
+                                    <Select.Item value="banana">
+                                        <Select.ItemText>Banana</Select.ItemText>
+                                    </Select.Item>
+                                    <Select.Item value="orange">
+                                        <Select.ItemText>Orange</Select.ItemText>
+                                    </Select.Item>
+                                </Select.Group>
+                            </Select.Viewport>
+                            <Select.ScrollDownButton className="SelectScrollButton">
+                                <ChevronDownIcon />
+                            </Select.ScrollDownButton>
+                        </Select.Content>
+                    </Select.Portal>
+                </Select.Root>
+
+
                 {children}
             </main>
 
