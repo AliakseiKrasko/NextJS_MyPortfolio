@@ -16,8 +16,6 @@
 # next.js
 /.next/
 /out/
-/.swc
-/.cache
 
 # production
 /build
@@ -35,26 +33,7 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
-# Системные файлы
-.DS_Store
-*.pid
-.idea/
-.vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-/docker-compose*.yml
-/.dockerignore
-
-# Тестовые данные
-/coverage
-/.nyc_output
-/.storybook/
-/stories/
-
+.idea*
 
 # vercel
 .vercel
@@ -62,8 +41,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# Дополнительные настройки (опционально)
-.next/cache/
-.next/server/
-.next/static/
