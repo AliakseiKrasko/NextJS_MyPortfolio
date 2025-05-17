@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 type Props = {
     text: string;
@@ -8,24 +8,25 @@ type Props = {
 };
 
 export const Typewriter = ({ text, speed = 100 }: Props) => {
-    const [displayText, setDisplayText] = useState("");
-    const indexRef = useRef(0);
+    const [index, setIndex] = useState(0);
 
     useEffect(() => {
-        indexRef.current = 0;
-        setDisplayText("");
+        if (index < text.length) {
+            const timeoutId = setTimeout(() => {
+                setIndex((prev) => prev + 1);
+            }, speed);
 
-        const interval = setInterval(() => {
-            setDisplayText((prev) => prev + text.charAt(indexRef.current));
-            indexRef.current += 1;
+            return () => clearTimeout(timeoutId);
+        }
+    }, [index, text, speed]);
 
-            if (indexRef.current >= text.length) {
-                clearInterval(interval);
-            }
-        }, speed);
+    useEffect(() => {
+        setIndex(0); // сброс при смене текста
+    }, [text]);
 
-        return () => clearInterval(interval);
-    }, [text, speed]);
-
-    return <div style={{ whiteSpace: "pre-wrap" }}>{displayText}</div>;
+    return (
+        <div style={{ whiteSpace: "pre-wrap" }}>
+            {text.slice(0, index)}
+        </div>
+    );
 };
