@@ -9,12 +9,12 @@ export default function Home() {
     return (
         <div>
             <header
-                className="fixed top-0 w-screen min-h-[50px] bg-gray-100 flex items-center justify-center flex-wrap">
+                className="fixed top-0 w-[80vw] h-[50px] bg-gray-100 flex items-center justify-center flex-wrap left-1/2 -translate-x-1/2">
                 <Header/>
             </header>
-            <main className="flex gap-[32px] bg-blue-500 row-start-2 items-center sm:items-start">
+            <main className="pt-[80px] flex bg-blue-500 items-center sm:items-start">
                 <div
-                    className="w-screen min-h-screen  text-white ml-[50px] flex items-center justify-start text-3xl font-bold">
+                    className="text-white text-3xl font-bold flex items-center justify-center w-full">
                     <Typewriter text={"  Hello, this my project! 👍👌\nAlex Krasko "} speed={80}/>
 
                 </div>
