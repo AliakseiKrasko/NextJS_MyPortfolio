@@ -27,5 +27,5 @@ export const Typewriter = ({ text, speed = 100 }: Props) => {
         return () => clearInterval(interval);
     }, [text, speed]);
 
-    return <span>{displayText}</span>;
+    return <div style={{ whiteSpace: "pre-wrap" }}>{displayText}</div>;
 };
