@@ -17,7 +17,7 @@ const ContactPage = () => {
                         <h2 className="text-xl font-semibold mb-2">Контактная информация</h2>
                         <p className="mb-1"><span className="font-medium">Email:</span> kraskoaliaksei@gmail.com</p>
                         <p className="mb-1"><span className="font-medium">Телефон:</span> +375 (33) 992-36-65</p>
-                        <p><span className="font-medium">Локация:</span> Волковыск, Беларусь></p>
+                        <p><span className="font-medium">Локация:</span> Волковыск, Беларусь</p>
                     </div>
 
                     <div className="mb-6">

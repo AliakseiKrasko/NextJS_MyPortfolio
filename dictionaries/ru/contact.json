@@ -1,0 +1,35 @@
+{
+  "title": "Контакты",
+  "contactInfo": {
+    "title": "Контактная информация",
+    "email": "kraskoaliaksei@gmail.com",
+    "phone": "+375 (33) 992-36-65",
+    "location": "Волковыск, Беларусь"
+  },
+  "form": {
+    "title": "Отправьте мне сообщение",
+    "fields": {
+      "name": "Ваше имя",
+      "email": "Email",
+      "message": "Сообщение"
+    },
+    "submit": "Отправить"
+  },
+  "social": {
+    "title": "Социальные сети",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "url": "#"
+      },
+      {
+        "label": "GitHub",
+        "url": "#"
+      },
+      {
+        "label": "Twitter",
+        "url": "#"
+      }
+    ]
+  }
+}

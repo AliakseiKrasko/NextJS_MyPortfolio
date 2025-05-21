@@ -1,0 +1,35 @@
+{
+  "title": "Contact",
+  "contactInfo": {
+    "title": "Contact Information",
+    "email": "kraskoaliaksei@gmail.com",
+    "phone": "+375 (33) 992-36-65",
+    "location": "Volkovysk, Belarus"
+  },
+  "form": {
+    "title": "Send Me a Message",
+    "fields": {
+      "name": "Your Name",
+      "email": "Email",
+      "message": "Message"
+    },
+    "submit": "Send"
+  },
+  "social": {
+    "title": "Social Media",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "url": "#"
+      },
+      {
+        "label": "GitHub",
+        "url": "#"
+      },
+      {
+        "label": "Twitter",
+        "url": "#"
+      }
+    ]
+  }
+}

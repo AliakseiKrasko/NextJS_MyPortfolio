@@ -1,0 +1,38 @@
+{
+  "title": "My Resume",
+  "experience": {
+    "title": "Work Experience",
+    "jobs": [
+      {
+        "position": "Senior Developer",
+        "company": "ABC Company",
+        "period": "2020 - Present",
+        "description": "Development and maintenance of web applications using React and Next.js."
+      },
+      {
+        "position": "Web Developer",
+        "company": "XYZ Company",
+        "period": "2018 - 2020",
+        "description": "Creating responsive websites and interfaces."
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "degree": "Master of Computer Science",
+        "institution": "XYZ University",
+        "period": "2016 - 2018"
+      },
+      {
+        "degree": "Bachelor of Computer Science",
+        "institution": "ABC University",
+        "period": "2012 - 2016"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills"
+  }
+}
