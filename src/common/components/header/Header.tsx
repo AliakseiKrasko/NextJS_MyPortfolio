@@ -7,10 +7,17 @@ export const Header = (props: Props) => {
             <Link href="/" className="text-xl font-bold">
                 My Project!
             </Link>
-            <nav className="flex items-center gap-2">
-                <Link href="/contact" className="flex items-center gap-1">
+            <nav className="flex items-center gap-4">
+                <Link href="/contact" className="flex items-center">
                     Contact
                 </Link>
+                <Link href="/cv" className="flex items-center">
+                    CV
+                </Link>
+                <Link href="/contactPage " className="flex items-center">
+                    ContactPage
+                </Link>
+
             </nav>
 
         </header>
