@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 type Props = {};
 export const Header = (props: Props) => {
@@ -13,6 +12,7 @@ export const Header = (props: Props) => {
                     Contact
                 </Link>
             </nav>
+
         </header>
     );
 };
