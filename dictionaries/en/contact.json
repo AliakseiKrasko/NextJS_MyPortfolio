@@ -1,33 +1,52 @@
 {
-  "title": "Contact",
+  "title": "Contact Me",
+  "meta": {
+    "description": "Contact information"
+  },
   "contactInfo": {
     "title": "Contact Information",
-    "email": "kraskoaliaksei@gmail.com",
-    "phone": "+375 (33) 992-36-65",
-    "location": "Volkovysk, Belarus"
-  },
-  "form": {
-    "title": "Send Me a Message",
-    "fields": {
-      "name": "Your Name",
-      "email": "Email",
-      "message": "Message"
+    "email": {
+      "label": "Email:",
+      "value": "kraskoaliaksei@gmail.com"
     },
-    "submit": "Send"
+    "phone": {
+      "label": "Phone:",
+      "value": "+375 (33) 992-36-65"
+    },
+    "location": {
+      "label": "Location:",
+      "value": "Volkovysk, Belarus"
+    }
   },
-  "social": {
+  "messageForm": {
+    "title": "Send Me a Message",
+    "nameField": {
+      "label": "Your Name",
+      "placeholder": "Enter your name"
+    },
+    "emailField": {
+      "label": "Email",
+      "placeholder": "Enter your email"
+    },
+    "messageField": {
+      "label": "Message",
+      "placeholder": "Type your message here"
+    },
+    "submitButton": "Send"
+  },
+  "socialMedia": {
     "title": "Social Media",
     "links": [
       {
-        "label": "LinkedIn",
+        "name": "LinkedIn",
         "url": "#"
       },
       {
-        "label": "GitHub",
+        "name": "GitHub",
         "url": "#"
       },
       {
-        "label": "Twitter",
+        "name": "Twitter",
         "url": "#"
       }
     ]

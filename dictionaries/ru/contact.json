@@ -1,33 +1,52 @@
 {
-  "title": "Контакты",
+  "title": "Связаться со мной",
+  "meta": {
+    "description": "Контактная информация"
+  },
   "contactInfo": {
     "title": "Контактная информация",
-    "email": "kraskoaliaksei@gmail.com",
-    "phone": "+375 (33) 992-36-65",
-    "location": "Волковыск, Беларусь"
-  },
-  "form": {
-    "title": "Отправьте мне сообщение",
-    "fields": {
-      "name": "Ваше имя",
-      "email": "Email",
-      "message": "Сообщение"
+    "email": {
+      "label": "Email:",
+      "value": "kraskoaliaksei@gmail.com"
     },
-    "submit": "Отправить"
+    "phone": {
+      "label": "Телефон:",
+      "value": "+375 (33) 992-36-65"
+    },
+    "location": {
+      "label": "Локация:",
+      "value": "Волковыск, Беларусь"
+    }
   },
-  "social": {
+  "messageForm": {
+    "title": "Отправьте мне сообщение",
+    "nameField": {
+      "label": "Ваше имя",
+      "placeholder": "Введите ваше имя"
+    },
+    "emailField": {
+      "label": "Email",
+      "placeholder": "Введите ваш email"
+    },
+    "messageField": {
+      "label": "Сообщение",
+      "placeholder": "Введите ваше сообщение"
+    },
+    "submitButton": "Отправить"
+  },
+  "socialMedia": {
     "title": "Социальные сети",
     "links": [
       {
-        "label": "LinkedIn",
+        "name": "LinkedIn",
         "url": "#"
       },
       {
-        "label": "GitHub",
+        "name": "GitHub",
         "url": "#"
       },
       {
-        "label": "Twitter",
+        "name": "Twitter",
         "url": "#"
       }
     ]
