@@ -79,7 +79,7 @@ export default async function ContactPage({ params: { lang } }: { params: { lang
                     <div>
                         <h2 className="text-xl font-semibold mb-2">{dict.socialMedia.title}</h2>
                         <div className="flex gap-4">
-                            {dict.socialMedia.links.map((link, index) => (
+                            {dict.socialMedia.links.map((link: { name: string; url: string }, index: number) => (
                                 <a key={index} href={link.url} className="text-blue-600 hover:underline">{link.name}</a>
                             ))}
                         </div>
