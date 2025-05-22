@@ -16,7 +16,7 @@ export default async function Layout({
     return (
         <div className="min-h-screen flex flex-col">
             <Header lang={lang} dictionary={dictionary} />
-            <main className="flex-1">{children}</main>
+            <main className="flex-1 mt-16">{children}</main>
             <Footer />
         </div>
     );
