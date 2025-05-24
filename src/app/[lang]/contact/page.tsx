@@ -31,35 +31,47 @@ export default async function ContactPage({ params: { lang } }: { params: { lang
 
                     <div className="mb-6">
                         <h2 className="text-xl font-semibold mb-4">{dict.messageForm.title}</h2>
-                        <form>
+                        <form
+                            action="https://formspree.io/f/xeogbjdv"
+                            method="POST"
+                        >
                             <div className="mb-4">
-                                <label htmlFor="name" className="block mb-1 font-medium">{dict.messageForm.nameField.label}</label>
+                                <label htmlFor="name" className="block mb-1 font-medium">
+                                    {dict.messageForm.nameField.label}
+                                </label>
                                 <input
                                     type="text"
                                     id="name"
+                                    name="name"
                                     placeholder={dict.messageForm.nameField.placeholder}
-                                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     required
+                                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 />
                             </div>
                             <div className="mb-4">
-                                <label htmlFor="email" className="block mb-1 font-medium">{dict.messageForm.emailField.label}</label>
+                                <label htmlFor="email" className="block mb-1 font-medium">
+                                    {dict.messageForm.emailField.label}
+                                </label>
                                 <input
                                     type="email"
                                     id="email"
+                                    name="email"
                                     placeholder={dict.messageForm.emailField.placeholder}
-                                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     required
+                                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 />
                             </div>
                             <div className="mb-4">
-                                <label htmlFor="message" className="block mb-1 font-medium">{dict.messageForm.messageField.label}</label>
+                                <label htmlFor="message" className="block mb-1 font-medium">
+                                    {dict.messageForm.messageField.label}
+                                </label>
                                 <textarea
                                     id="message"
-                                    rows={4}
+                                    name="message"
                                     placeholder={dict.messageForm.messageField.placeholder}
-                                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     required
+                                    rows={4}
+                                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 ></textarea>
                             </div>
                             <button
