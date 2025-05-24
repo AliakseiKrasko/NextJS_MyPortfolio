@@ -36,11 +36,11 @@ export default async function CVPage({ params: { lang } }: { params: { lang: Loc
                     <div className="border-l-2 border-gray-300 pl-4">
                         {dict.experience.jobs.map((job: Job, index: number) => (
                             <div key={index} className="mb-6">
-                                <h3 className="text-xl font-medium">{job.position}</h3>
-                                <p className="text-gray-600">{job.company} • {job.period}</p>
-                                <p className="mt-2">{job.description}</p>
+                                <h3 className="text-xl text-gray-400 font-medium">{job.position}</h3>
+                                <p className="text-green-500">{job.company} • {job.period}</p>
+                                <p className="mt-2 text-green-500">{job.description}</p>
                                 {job.details && job.details.length > 0 && (
-                                    <ul className="list-disc ml-6 mt-2 text-gray-800 text-sm">
+                                    <ul className="list-disc ml-6 mt-2 text-green-500 text-sm">
                                         {job.details.map((detail, i) => (
                                             <li key={i}>{detail}</li>
                                         ))}
@@ -55,9 +55,9 @@ export default async function CVPage({ params: { lang } }: { params: { lang: Loc
                     <h2 className="text-2xl font-semibold mb-4">{dict.education.title}</h2>
                     <div className="border-l-2 border-gray-300 pl-4">
                         {dict.education.items.map((edu: EducationItem, index: number) => (
-                            <div key={index} className="mb-4 bg-gray-100 text-green-900 dark:bg-green-700 dark:text-green-100">
-                                <h3 className="text-xl font-medium">{edu.degree}</h3>
-                                <p className="text-gray-600">{edu.institution} • {edu.period}</p>
+                            <div className="mb-4">
+                                <h3 className="text-xl font-medium text-green-500 dark:text-white">{edu.degree}</h3>
+                                <p className="text-gray-400">{edu.institution} • {edu.period}</p>
                             </div>
                         ))}
                     </div>
