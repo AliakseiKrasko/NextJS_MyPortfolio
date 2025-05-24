@@ -14,6 +14,7 @@ type Props = {
         general: {
             projectName: string;
         };
+        themeSwitcher: { light: string; dark: string; }
     };
 };
 
@@ -23,7 +24,7 @@ export const Header = ({ lang, dictionary }: Props) => {
             <Link href={`/${lang}`} className="text-xl font-bold">
                 {dictionary.general.projectName}
             </Link>
-            <ThemeSwitcher />
+            <ThemeSwitcher dict={dictionary.themeSwitcher} />
             <nav className="flex items-center gap-4">
                 <Link href={`/${lang}/contact`} className="flex items-center">
                     {dictionary.header.contact}

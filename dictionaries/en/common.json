@@ -4,6 +4,10 @@
     "contact": "Contact",
     "cv": "CV"
   },
+  "themeSwitcher": {
+    "light": "Light",
+    "dark": "Dark"
+  },
   "general": {
     "projectName": "My Project!"
   }

@@ -1,8 +1,7 @@
 'use client';
-
 import { useTheme } from 'next-themes';
 
-export function ThemeSwitcher() {
+export function ThemeSwitcher({ dict }: { dict: { light: string; dark: string } }) {
     const { theme, setTheme } = useTheme();
 
     return (
@@ -15,7 +14,7 @@ export function ThemeSwitcher() {
                     : 'bg-gray-200 text-gray-900 hover:bg-blue-100'}
                 `}
             >
-                Светлая
+                {dict.light}
             </button>
             <button
                 onClick={() => setTheme('dark')}
@@ -25,7 +24,7 @@ export function ThemeSwitcher() {
                     : 'bg-gray-200 text-gray-900 hover:bg-blue-100'}
                 `}
             >
-                Тёмная
+                {dict.dark}
             </button>
         </div>
     );
