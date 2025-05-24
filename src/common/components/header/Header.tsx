@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Locale } from "../../../../i18n-config";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import {ThemeSwitcher} from "@/common/components/ThemeSwitcher/ThemeSwitcher";
 
 type Props = {
     lang: Locale;
@@ -22,6 +23,7 @@ export const Header = ({ lang, dictionary }: Props) => {
             <Link href={`/${lang}`} className="text-xl font-bold">
                 {dictionary.general.projectName}
             </Link>
+            <ThemeSwitcher />
             <nav className="flex items-center gap-4">
                 <Link href={`/${lang}/contact`} className="flex items-center">
                     {dictionary.header.contact}

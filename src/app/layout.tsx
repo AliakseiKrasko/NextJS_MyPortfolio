@@ -1,5 +1,6 @@
 import './globals.css';
 import { defaultLocale } from '../../i18n-config';
+import {ThemeProvider} from "@/common/components/ThemeProvider/ThemeProvider";
 
 export const metadata = {
     title: 'Multilingual Website',
@@ -13,7 +14,11 @@ export default function RootLayout({
 }) {
     return (
         <html lang={defaultLocale}>
-        <body>{children}</body>
+        <body>
+        <ThemeProvider>
+        {children}
+        </ThemeProvider>
+        </body>
         </html>
     );
 }
