@@ -1,12 +1,15 @@
+"use client";
+
 import { Locale, getTranslations } from '../../../i18n-config';
 import Image from 'next/image';
+import {Typewriter} from "react-simple-typewriter";
 
 export default async function HomePage({ params: { lang } }: { params: { lang: Locale } }) {
     const common = await getTranslations(lang, 'common');
 
-    const welcomeText = {
-        ru: 'Добро пожаловать на мой многоязычный сайт!',
-        en: 'Welcome to my multilingual website!'
+    const typewriterText = {
+        ru: ['Привет, я Алексей!', 'Добро пожаловать на мой сайт!'],
+        en: ['Welcome, I am Aliaksei!', 'Welcome to my website!']
     };
 
     const descriptionText = {
@@ -16,7 +19,17 @@ export default async function HomePage({ params: { lang } }: { params: { lang: L
 
     return (
         <div className="container mx-auto px-4 py-16 max-w-4xl">
-            <h1 className="text-4xl font-bold mb-12">{welcomeText[lang]}</h1>
+            <h1 className="text-4xl font-bold mb-6">
+                <Typewriter
+                    words={typewriterText[lang]}
+                    loop={true}
+                    cursor
+                    cursorStyle="_"
+                    typeSpeed={80}
+                    deleteSpeed={50}
+                    delaySpeed={1500}
+                />
+            </h1>
             <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-12">
                 {/* Фото слева */}
                 <Image
