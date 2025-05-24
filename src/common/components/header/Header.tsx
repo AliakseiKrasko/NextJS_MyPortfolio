@@ -49,6 +49,12 @@ export const Header = ({ lang, dictionary }: Props) => {
                     </Link>
                 ))}
             </nav>
+           {/* <nav className="flex justify-center gap-12 py-8 text-[#b9ff39] font-medium text-lg">
+                <div className="absolute top-0 right-66 flex flex-col gap-1 text-black">
+                    <button className="bg-[#181818] text-[#b9ff39] px-3 py-1 rounded-md">EN</button>
+                    <button className="bg-[#181818] text-[#b9ff39] px-3 py-1 rounded-md">RU</button>
+                </div>
+            </nav>*/}
             <ThemeSwitcher dict={dictionary.themeSwitcher} />
             <LanguageSwitcher currentLang={lang} />
         </header>
