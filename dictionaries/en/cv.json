@@ -7,13 +7,23 @@
         "position": "Senior Developer",
         "company": "ABC Company",
         "period": "2020 - Present",
-        "description": "Development and maintenance of web applications using React and Next.js."
+        "description": "Development and maintenance of web applications using React and Next.js.",
+        "details": [
+          "Front-end architecture of large-scale projects",
+          "Implementing TypeScript, performance optimization, and code reviews",
+          "Integration with REST/GraphQL APIs, SSR/SSG setup, CI/CD implementation"
+        ]
       },
       {
         "position": "Web Developer",
         "company": "XYZ Company",
         "period": "2018 - 2020",
-        "description": "Creating responsive websites and interfaces."
+        "description": "Creating responsive websites and interfaces.",
+        "details": [
+          "Pixel-perfect layouts from Figma/Zeplin, ensuring cross-browser compatibility",
+          "Building interactive UI components in JavaScript/React",
+          "Working with forms, validation, and third-party library integration"
+        ]
       }
     ]
   },
@@ -33,6 +43,38 @@
     ]
   },
   "skills": {
-    "title": "Skills"
+    "title": "Skills",
+    "items": [
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Redux Toolkit",
+      "RTK Query",
+      "CSS3",
+      "SCSS/SASS",
+      "Tailwind CSS",
+      "Styled-components",
+      "Git",
+      "Webpack",
+      "Vite",
+      "ESLint",
+      "Prettier",
+      "Storybook",
+      "Jest",
+      "React Testing Library",
+      "Cypress",
+      "REST",
+      "GraphQL",
+      "WebSockets",
+      "Docker (basic skills)",
+      "GitHub Actions",
+      "CI/CD",
+      "i18n",
+      "Pixel Perfect",
+      "Responsive & accessible layout (a11y)",
+      "Code Review",
+      "Agile/Scrum"
+    ]
   }
 }

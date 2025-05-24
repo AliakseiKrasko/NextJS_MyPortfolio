@@ -7,13 +7,23 @@
         "position": "Старший разработчик",
         "company": "Компания ABC",
         "period": "2020 - Настоящее время",
-        "description": "Разработка и поддержка веб-приложений с использованием React и Next.js."
+        "description": "Разработка и поддержка веб-приложений с использованием React и Next.js.",
+        "details": [
+          "Архитектура фронтенд-части крупных проектов",
+          "Внедрение TypeScript, оптимизация производительности, code review",
+          "Интеграция с REST/GraphQL API, настройка SSR/SSG, внедрение CI/CD"
+        ]
       },
       {
         "position": "Веб-разработчик",
         "company": "Компания XYZ",
         "period": "2018 - 2020",
-        "description": "Создание адаптивных веб-сайтов и интерфейсов."
+        "description": "Создание адаптивных веб-сайтов и интерфейсов.",
+        "details": [
+          "Верстка по макетам (Figma/Zeplin), обеспечение кроссбраузерности",
+          "Реализация интерактивных UI-компонентов на JavaScript/React",
+          "Работа с формами, валидацией, интеграцией сторонних библиотек"
+        ]
       }
     ]
   },
@@ -33,6 +43,38 @@
     ]
   },
   "skills": {
-    "title": "Навыки"
+    "title": "Навыки",
+    "items": [
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Redux Toolkit",
+      "RTK Query",
+      "CSS3",
+      "SCSS/SASS",
+      "Tailwind CSS",
+      "Styled-components",
+      "Git",
+      "Webpack",
+      "Vite",
+      "ESLint",
+      "Prettier",
+      "Storybook",
+      "Jest",
+      "React Testing Library",
+      "Cypress",
+      "REST",
+      "GraphQL",
+      "WebSockets",
+      "Docker (базовые навыки)",
+      "GitHub Actions",
+      "CI/CD",
+      "i18n",
+      "Pixel Perfect",
+      "Адаптивная и доступная верстка (a11y)",
+      "Code Review",
+      "Agile/Scrum"
+    ]
   }
 }

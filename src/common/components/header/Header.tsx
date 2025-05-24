@@ -24,16 +24,16 @@ export const Header = ({ lang, dictionary }: Props) => {
             <Link href={`/${lang}`} className="text-xl font-bold">
                 {dictionary.general.projectName}
             </Link>
-            <ThemeSwitcher dict={dictionary.themeSwitcher} />
-            <nav className="flex items-center gap-4">
+            <nav className="flex items-center gap-6 flex-1 justify-center">
                 <Link href={`/${lang}/contact`} className="flex items-center">
                     {dictionary.header.contact}
                 </Link>
-                <Link href={`/${lang}/cv`} className="flex items-center">
+                <Link href={`/${lang}/cv`} className="flex items-center mr-4">
                     {dictionary.header.cv}
                 </Link>
-                <LanguageSwitcher currentLang={lang} />
             </nav>
+            <ThemeSwitcher dict={dictionary.themeSwitcher} />
+            <LanguageSwitcher currentLang={lang} />
         </header>
     );
 };

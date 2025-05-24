@@ -8,7 +8,7 @@ export function ThemeSwitcher({ dict }: { dict: { light: string; dark: string } 
         <div className="flex gap-2">
             <button
                 onClick={() => setTheme('light')}
-                className={`px-4 py-2 rounded-md font-medium transition-colors duration-200
+                className={`px-1 py-1 rounded-md text-sm transition-colors duration-200
                     ${theme === 'light'
                     ? 'bg-blue-600 text-white'
                     : 'bg-gray-200 text-gray-900 hover:bg-blue-100'}
@@ -18,7 +18,7 @@ export function ThemeSwitcher({ dict }: { dict: { light: string; dark: string } 
             </button>
             <button
                 onClick={() => setTheme('dark')}
-                className={`px-4 py-2 rounded-md font-medium transition-colors duration-200
+                className={`px-1 py-1 rounded-md text-sm transition-colors duration-200
                     ${theme === 'dark'
                     ? 'bg-blue-600 text-white'
                     : 'bg-gray-200 text-gray-900 hover:bg-blue-100'}

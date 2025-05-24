@@ -1,7 +1,5 @@
 import { Locale, getTranslations } from '../../../../i18n-config';
 
-
-
 type EducationItem = {
     degree: string;
     institution: string;
@@ -13,8 +11,8 @@ type Job = {
     company: string;
     period: string;
     description: string;
+    details?: string[];
 };
-
 
 export async function generateMetadata({ params: { lang } }: { params: { lang: Locale } }) {
     const dict = await getTranslations(lang, 'cv');
@@ -37,10 +35,17 @@ export default async function CVPage({ params: { lang } }: { params: { lang: Loc
                     <h2 className="text-2xl font-semibold mb-4">{dict.experience.title}</h2>
                     <div className="border-l-2 border-gray-300 pl-4">
                         {dict.experience.jobs.map((job: Job, index: number) => (
-                            <div key={index} className="mb-4">
+                            <div key={index} className="mb-6">
                                 <h3 className="text-xl font-medium">{job.position}</h3>
                                 <p className="text-gray-600">{job.company} • {job.period}</p>
                                 <p className="mt-2">{job.description}</p>
+                                {job.details && job.details.length > 0 && (
+                                    <ul className="list-disc ml-6 mt-2 text-gray-800 text-sm">
+                                        {job.details.map((detail, i) => (
+                                            <li key={i}>{detail}</li>
+                                        ))}
+                                    </ul>
+                                )}
                             </div>
                         ))}
                     </div>
@@ -50,7 +55,7 @@ export default async function CVPage({ params: { lang } }: { params: { lang: Loc
                     <h2 className="text-2xl font-semibold mb-4">{dict.education.title}</h2>
                     <div className="border-l-2 border-gray-300 pl-4">
                         {dict.education.items.map((edu: EducationItem, index: number) => (
-                            <div key={index} className="mb-4">
+                            <div key={index} className="mb-4 bg-gray-100 text-green-900 dark:bg-green-700 dark:text-green-100">
                                 <h3 className="text-xl font-medium">{edu.degree}</h3>
                                 <p className="text-gray-600">{edu.institution} • {edu.period}</p>
                             </div>
@@ -61,14 +66,14 @@ export default async function CVPage({ params: { lang } }: { params: { lang: Loc
                 <section>
                     <h2 className="text-2xl font-semibold mb-4">{dict.skills.title}</h2>
                     <div className="flex flex-wrap gap-2">
-                        <span className="bg-gray-200 px-3 py-1 rounded-full">JavaScript</span>
-                        <span className="bg-gray-200 px-3 py-1 rounded-full">TypeScript</span>
-                        <span className="bg-gray-200 px-3 py-1 rounded-full">React</span>
-                        <span className="bg-gray-200 px-3 py-1 rounded-full">Next.js</span>
-                        <span className="bg-gray-200 px-3 py-1 rounded-full">HTML</span>
-                        <span className="bg-gray-200 px-3 py-1 rounded-full">CSS</span>
-                        <span className="bg-gray-200 px-3 py-1 rounded-full">Tailwind CSS</span>
-                        <span className="bg-gray-200 px-3 py-1 rounded-full">Node.js</span>
+                        {dict.skills.items.map((skill: string, idx: number) => (
+                            <span
+                                key={idx}
+                                className="bg-green-200 text-green-900 dark:bg-green-700 dark:text-green-100 px-3 py-1 rounded-full"
+                            >
+  {skill}
+</span>
+                        ))}
                     </div>
                 </section>
             </main>
