@@ -10,6 +10,7 @@ type Props = {
             home: string;
             contact: string;
             cv: string;
+            skills: ["Навыки", "Skills"];
         };
         general: {
             projectName: string;
@@ -25,11 +26,17 @@ export const Header = ({ lang, dictionary }: Props) => {
                 {dictionary.general.projectName}
             </Link>
             <nav className="flex items-center gap-6 flex-1 justify-center">
+                <Link href={`/${lang}`} className="text-xl font-bold">
+                    {dictionary.header.home}
+                </Link>
                 <Link href={`/${lang}/contact`} className="flex items-center">
                     {dictionary.header.contact}
                 </Link>
                 <Link href={`/${lang}/cv`} className="flex items-center mr-4">
                     {dictionary.header.cv}
+                </Link>
+                <Link href={`/${lang}/skills`} className="flex items-center mr-4">
+                    {dictionary.header.skills ? dictionary.header.skills[0] : "Skills"}
                 </Link>
             </nav>
             <ThemeSwitcher dict={dictionary.themeSwitcher} />

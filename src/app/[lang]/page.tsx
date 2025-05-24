@@ -19,7 +19,7 @@ export default async function HomePage({ params: { lang } }: { params: { lang: L
                 <h1 className="text-4xl font-bold mb-6">{welcomeText[lang]}</h1>
                 <p className="text-xl mb-8">{descriptionText[lang]}</p>
 
-                <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-black dark:text-white">
+                <div className="">
                     <p className="mb-4">
                         {lang === 'ru'
                             ? 'Вы можете переключаться между языками с помощью кнопок в шапке сайта.'
