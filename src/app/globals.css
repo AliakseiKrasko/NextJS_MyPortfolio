@@ -2,13 +2,13 @@
 @tailwind utilities;
 
 html {
-  --background: #fff;
-  --text: #111;
+  --background: #babacd;
+  --text: #5a008c;
 }
 
 html.dark {
   --background: #111;
-  --text: #fff;
+  --text: #b9ff39;
 }
 
 body {

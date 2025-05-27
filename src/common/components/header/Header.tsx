@@ -34,7 +34,10 @@ export const Header = ({ lang, dictionary }: Props) => {
     ];
 
     return (
-        <header className="fixed top-0 left-0 right-0 flex items-center justify-between px-4 py-2 w-full bg-gray-300 dark:bg-gray-800 transition-colors duration-300">
+        <header
+            style={{ background: "var(--header-bg)" }}
+            className="fixed top-0 left-0 right-0 flex items-center justify-between px-4 py-2 w-full transition-colors duration-300"
+        >
             <Link href={`/${lang}`} className="text-xl font-bold">
                 {dictionary.general.projectName}
             </Link>
