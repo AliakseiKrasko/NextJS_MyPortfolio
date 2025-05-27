@@ -44,7 +44,7 @@ export default async function HomePage({params: {lang}}: { params: { lang: Local
                     <h1 className="text-[#b9ff39] text-5xl font-extrabold mb-6">
                         Krasko Aliaksei
                     </h1>
-                    <h1 className="text-4xl font-bold mb-6">
+                    <h1 className="text-4xl font-bold mb-6 text-white">
                         <Typewriter
                             words={typewriterText[lang]}
                             loop={true}
