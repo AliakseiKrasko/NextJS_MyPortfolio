@@ -20,11 +20,10 @@ export const LanguageSwitcher = ({ currentLang }: Props) => {
                 <Link
                     key={locale}
                     href={`/${locale}${pathnameWithoutLang}`}
-                    className={`px-2 py-1 rounded text-sm ${
-                        currentLang === locale
-                            ? 'bg-blue-600 text-white'
-                            : 'bg-gray-200 hover:bg-gray-300'
-                    }`}
+                    className={`px-2 py-1 rounded text-sm text-black hover:bg-blue-100
+        ${currentLang === locale ? '' : 'bg-white'}
+    `}
+                    style={currentLang === locale ? { background: '#b9ff39' } : {}}
                 >
                     {locale === 'ru' ? '🇷🇺' : '🇬🇧'}
                 </Link>
