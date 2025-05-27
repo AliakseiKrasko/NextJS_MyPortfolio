@@ -15,7 +15,7 @@ export default async function ContactPage({ params: { lang } }: { params: { lang
         <div className="container mx-auto px-4 py-8">
             <main className="max-w-2xl mx-auto">
                 <h1 className="text-3xl font-bold mb-6">{dict.title}</h1>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-black dark:text-white">
+                <div className="bg-gray-400 dark:bg-gray-800 rounded-lg shadow-md p-6 text-black dark:text-white">
                     <div className="mb-6">
                         <h2 className="text-xl font-semibold mb-2">{dict.contactInfo.title}</h2>
                         <p className="mb-1">
@@ -45,7 +45,7 @@ export default async function ContactPage({ params: { lang } }: { params: { lang
                                     name="name"
                                     placeholder={dict.messageForm.nameField.placeholder}
                                     required
-                                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="w-full px-3 py-2 border border-gray-400 dark:border-gray-600 rounded-md bg-gray-300 dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 />
                             </div>
                             <div className="mb-4">
@@ -58,7 +58,7 @@ export default async function ContactPage({ params: { lang } }: { params: { lang
                                     name="email"
                                     placeholder={dict.messageForm.emailField.placeholder}
                                     required
-                                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-gray-300 dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 />
                             </div>
                             <div className="mb-4">
@@ -71,7 +71,7 @@ export default async function ContactPage({ params: { lang } }: { params: { lang
                                     placeholder={dict.messageForm.messageField.placeholder}
                                     required
                                     rows={4}
-                                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-gray-300 dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 ></textarea>
                             </div>
                             <button
