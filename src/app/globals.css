@@ -32,3 +32,9 @@ html.dark body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+html.dark .skill-card {
+  background-color: rgba(30, 41, 59, 0.73);
+  border: 1px solid #334155;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}

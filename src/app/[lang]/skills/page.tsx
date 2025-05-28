@@ -53,7 +53,7 @@ export default function SkillsPage() {
                 {skills.map((skill, index) => (
                     <div
                         key={index}
-                        className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+                        className="flex flex-col items-center p-4 bg-gray-300 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 skill-card"
                     >
                         <div className="mb-3 transition-transform duration-300 hover:scale-110">{skill.icon}</div>
                         <h3 className="text-center font-medium">{skill.name}</h3>
