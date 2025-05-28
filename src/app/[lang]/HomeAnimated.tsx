@@ -3,6 +3,8 @@
 import Image from 'next/image';
 import { Typewriter } from "react-simple-typewriter";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 type Props = {
     lang: 'ru' | 'en';
@@ -11,6 +13,7 @@ type Props = {
 
 export default function HomeAnimated({ lang, common }: Props) {
     const [show, setShow] = useState(false);
+    const router = useRouter();
 
     useEffect(() => {
         setShow(true);
@@ -27,7 +30,7 @@ export default function HomeAnimated({ lang, common }: Props) {
     };
 
     return (
-        <div className={`min-h-screen relative overflow-hidden -z-50 transition-all duration-700 ${show ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`min-h-screen relative overflow-hidden transition-all duration-700 ${show ? 'opacity-100' : 'opacity-0'}`}>
             <div className="flex flex-col md:flex-row items-center justify-center gap-16 pt-8 max-w-5xl mx-auto">
 
                 <div className={`bg-white/5 border border-violet-600 rounded-2xl p-4 shadow-lg flex-grow-0 flex-shrink-0 basis-full md:basis-1/3 w-full md:w-1/3 home-border
@@ -58,17 +61,20 @@ export default function HomeAnimated({ lang, common }: Props) {
                     </h1>
                     <p className="text-violet-600 cv-text text-lg mb-8">{descriptionText[lang]}</p>
                     <div className="flex gap-6 mb-4">
-                        <button
-                            className="bg-[#b9ff39] text-black px-6 py-3 rounded-md font-semibold flex items-center gap-2 shadow hover:bg-[#d3ff80] transition">
+
+                        <Link
+                            href={`/${lang}/contact`}
+                            className="bg-[#b9ff39] text-black px-6 py-3 rounded-md font-semibold flex items-center gap-2 shadow hover:bg-gray-400 transition cursor-pointer"
+                        >
                             <svg width="24" height="24" fill="none">
                                 <path
                                     d="M2 12l1.41-1.41a2 2 0 012.83 0l6.3 6.3a2 2 0 002.83 0l6.3-6.3a2 2 0 012.83 0L22 12"
                                     stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             Send message
-                        </button>
+                        </Link>
                         <button
-                            className="border-2 border-violet-600 text-violet-600 px-6 py-3 rounded-md font-semibold flex items-center gap-2 hover:bg-[#b9ff39] hover:text-black transition home-border">
+                            className="border-2 border-violet-600 text-violet-600 px-6 py-3 rounded-md font-semibold flex items-center gap-2 hover:bg-gray-400 hover:text-black transition home-border">
                             <svg width="22" height="22" fill="none">
                                 <path d="M12 16v-8m0 8l-4-4m4 4l4-4" stroke="currentColor" strokeWidth="2"
                                       strokeLinecap="round" strokeLinejoin="round" />
