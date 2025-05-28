@@ -37,10 +37,10 @@ export default async function CVPage({ params: { lang } }: { params: { lang: Loc
                         {dict.experience.jobs.map((job: Job, index: number) => (
                             <div key={index} className="mb-6">
                                 <h3 className="text-xl font-medium">{job.position}</h3>
-                                <p className="text-gray-600">{job.company} • {job.period}</p>
+                                <p className="text-gray-600 cv-text cv-text">{job.company} • {job.period}</p>
                                 <p className="mt-2">{job.description}</p>
                                 {job.details && job.details.length > 0 && (
-                                    <ul className="list-disc ml-6 mt-2 text-gray-800 text-sm">
+                                    <ul className="list-disc ml-6 mt-2 text-gray-800 text-sm cv-text">
                                         {job.details.map((detail, i) => (
                                             <li key={i}>{detail}</li>
                                         ))}
@@ -57,25 +57,13 @@ export default async function CVPage({ params: { lang } }: { params: { lang: Loc
                         {dict.education.items.map((edu: EducationItem, index: number) => (
                             <div key={index} className="mb-4">
                                 <h3 className="text-xl font-medium">{edu.degree}</h3>
-                                <p className="text-gray-600">{edu.institution} • {edu.period}</p>
+                                <p className="text-gray-600 cv-text">{edu.institution} • {edu.period}</p>
                             </div>
                         ))}
                     </div>
                 </section>
 
-                <section>
-                    <h2 className="text-2xl font-semibold mb-4">{dict.skills.title}</h2>
-                    <div className="flex flex-wrap gap-2">
-                        {dict.skills.items.map((skill: string, idx: number) => (
-                            <span
-                                key={idx}
-                                className="bg-green-200 text-green-900 dark:bg-green-700 dark:text-green-100 px-3 py-1 rounded-full"
-                            >
-  {skill}
-</span>
-                        ))}
-                    </div>
-                </section>
+
             </main>
         </div>
     );
