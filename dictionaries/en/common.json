@@ -2,7 +2,9 @@
   "header": {
     "home": "Home",
     "contact": "Contact",
-    "cv": "CV"
+    "cv": "CV",
+    "skills": ["Skills"],
+    "about": "About"
   },
   "themeSwitcher": {
     "light": "Light",

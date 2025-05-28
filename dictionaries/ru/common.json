@@ -2,7 +2,9 @@
   "header": {
     "home": "Главная",
     "contact": "Контакты",
-    "cv": "Резюме"
+    "cv": "Резюме",
+    "skills": ["Навыки"],
+    "about": "Обо мне"
   },
   "themeSwitcher": {
     "light": "Светлая",

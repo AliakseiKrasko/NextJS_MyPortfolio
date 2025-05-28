@@ -14,6 +14,7 @@ type Props = {
             contact: string;
             cv: string;
             skills: ["Навыки", "Skills"];
+            about: string;
         };
         general: {
             projectName: string;
@@ -31,6 +32,7 @@ export const Header = ({ lang, dictionary }: Props) => {
         { href: `/${lang}/contact`, label: dictionary.header.contact },
         { href: `/${lang}/cv`, label: dictionary.header.cv },
         { href: `/${lang}/skills`, label: dictionary.header.skills ? dictionary.header.skills[0] : "Skills" },
+        { href: `/${lang}/about`, label: dictionary.header.about },
     ];
 
     return (
@@ -43,7 +45,7 @@ export const Header = ({ lang, dictionary }: Props) => {
                     <Link
                         key={link.href}
                         href={link.href}
-                        className={`flex items-center mr-4 ${pathname === link.href ? "font-bold" : ""}`}
+                        className={`flex items-center mr-4 ${pathname === link.href ? "font-bold text-white" : ""}`}
                     >
                         {link.label}
                     </Link>

@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   color: var(--text);
   min-height: 100vh;
-  background-image: url('/blue-digital.avif'); /* путь к светлой картинке */
+  background-image: url('/istock_light.jpg'); /* путь к светлой картинке */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -23,7 +23,7 @@ body {
 /* Темная тема */
 html.dark body {
   color: var(--text);
-  background-image: url('/vector.webp'); /* путь к темной картинке */
+  background-image: url('/istock.jpg'); /* путь к темной картинке */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
