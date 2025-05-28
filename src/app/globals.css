@@ -2,24 +2,33 @@
 @tailwind utilities;
 
 html {
-  --background: #babacd;
+  /*--background: #babacd;*/
   --text: #5a008c;
 }
 
 html.dark {
-  --background: #111;
+  /*--background: #111;*/
   --text: #b9ff39;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  background: var(--background);
+  /*background: var(--background);*/
   color: var(--text);
   min-height: 100vh;
+  background-image: url('/blue-digital.avif'); /* путь к светлой картинке */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-main {
-  flex: 1;
+/* Темная тема */
+html.dark body {
+  /*background: var(--background);*/
+  color: var(--text);
+  background-image: url('/vector.webp'); /* путь к темной картинке */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-

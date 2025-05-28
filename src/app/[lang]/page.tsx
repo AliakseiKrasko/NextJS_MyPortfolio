@@ -19,13 +19,6 @@ export default async function HomePage({params: {lang}}: { params: { lang: Local
 
     return (
         <div className="min-h-screen relative overflow-hidden -z-50">
-            {/*/!* Навигация *!/*/}
-            {/*<nav className="flex justify-center gap-12 py-8 text-[#b9ff39] font-medium text-lg">*/}
-            {/*    <div className="absolute right-8 flex flex-col gap-1 text-black">*/}
-            {/*        <button className="bg-[#181818] text-[#b9ff39] px-3 py-1 rounded-md">EN</button>*/}
-            {/*        <button className="bg-[#181818] text-[#b9ff39] px-3 py-1 rounded-md">RU</button>*/}
-            {/*    </div>*/}
-            {/*</nav>*/}
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-16 pt-8 max-w-5xl mx-auto">
                 {/* Фото: занимает 1/3 ширины (grow-0 shrink-0 basis-1/3) */}

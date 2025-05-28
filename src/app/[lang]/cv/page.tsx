@@ -33,7 +33,7 @@ export default async function CVPage({ params: { lang } }: { params: { lang: Loc
 
                 <section className="mb-8">
                     <h2 className="text-2xl font-semibold mb-4">{dict.experience.title}</h2>
-                    <div className="border-l-2 border-gray-300 pl-4">
+                    <div className="border-l-2 border-gray-400 pl-4">
                         {dict.experience.jobs.map((job: Job, index: number) => (
                             <div key={index} className="mb-6">
                                 <h3 className="text-xl font-medium">{job.position}</h3>
