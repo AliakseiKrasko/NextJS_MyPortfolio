@@ -24,6 +24,7 @@
       "label": "Your Name",
       "placeholder": "Enter your name"
     },
+    "successMessage": "Message sent successfully!",
     "emailField": {
       "label": "Email",
       "placeholder": "Enter your email"

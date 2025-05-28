@@ -22,7 +22,8 @@
     "title": "Отправьте мне сообщение",
     "nameField": {
       "label": "Ваше имя",
-      "placeholder": "Введите ваше имя"
+      "placeholder": "Введите ваше имя",
+      "successMessage": "Сообщение успешно отправлено!"
     },
     "emailField": {
       "label": "Email",
