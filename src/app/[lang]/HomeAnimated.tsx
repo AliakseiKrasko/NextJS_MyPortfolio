@@ -22,8 +22,8 @@ export default function HomeAnimated({ lang, common }: Props) {
     };
 
     const descriptionText = {
-        ru: 'Этот сайт создан с использованием Next.js App Router и поддерживает несколько языков.',
-        en: 'This website is built using Next.js App Router and supports multiple languages.'
+        ru: 'Я создаю отзывчивые веб-сайты и интерактивные веб-приложения, где технологии встречаются с творчеством..',
+        en: 'I\'m builds responsive websites and interactive web applications where technology meets creativity.'
     };
 
     return (
