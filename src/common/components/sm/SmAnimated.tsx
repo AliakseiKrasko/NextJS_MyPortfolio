@@ -45,7 +45,7 @@ export const SmAnimated: React.FC<Props> = ({ dict }) => {
                 {dict.experience && (
                     <section className="mb-8">
                         <h2 className="text-2xl font-semibold mb-4">{dict.experience.title}</h2>
-                        <div className="border-l-2 border-gray-400 pl-4">
+                        <div className="border-l-2 border-gray-400 pl-4 cv-text">
                             {dict.experience.items.map((item, index) => (
                                 <div
                                     key={index}
@@ -55,7 +55,7 @@ export const SmAnimated: React.FC<Props> = ({ dict }) => {
                                     <h3 className="text-xl font-medium">{item.title}</h3>
                                     <p className="mt-2">{item.description}</p>
                                     {item.details && item.details.length > 0 && (
-                                        <ul className="list-disc ml-6 mt-2 text-gray-800 text-sm">
+                                        <ul className="list-disc ml-6 mt-2 cv-text text-sm">
                                             {item.details.map((detail, i) => (
                                                 <li key={i}>{detail}</li>
                                             ))}
@@ -78,7 +78,7 @@ export const SmAnimated: React.FC<Props> = ({ dict }) => {
                                     style={{ transitionDelay: `${500 + index * 80}ms` }}
                                 >
                                     <h3 className="text-xl font-medium">{edu.course}</h3>
-                                    <p className="text-gray-600">{edu.organization} • {edu.period}</p>
+                                    <p className="text-gray-600 cv-text">{edu.organization} • {edu.period}</p>
                                 </div>
                             ))}
                         </div>

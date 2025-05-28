@@ -1,40 +1,50 @@
 @import "tailwindcss";
+
 @tailwind utilities;
 
 html {
-  --text: #5a008c;
+    --text: #5a008c;
 }
 
 html.dark {
-  --text: #b9ff39;
+    --text: #b9ff39;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  color: var(--text);
-  min-height: 100vh;
-  background-image: url('/istock_light.jpg'); /* путь к светлой картинке */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--text);
+    min-height: 100vh;
+    background-image: url('/istock_light.jpg'); /* путь к светлой картинке */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Темная тема */
 html.dark body {
-  color: var(--text);
-  background-image: url('/istock.jpg'); /* путь к темной картинке */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    color: var(--text);
+    background-image: url('/istock.jpg'); /* путь к темной картинке */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 html.dark .skill-card {
-  background-color: rgba(30, 41, 59, 0.73);
-  border: 1px solid #334155;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: rgba(30, 41, 59, 0.73);
+    border: 1px solid #334155;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 html.dark .cv-text {
-  color: white;
+    color: white;
+}
+
+html.dark .home-text {
+    color: #b9ff39;
+}
+
+html.dark .home-border {
+    border: 2px solid #b9ff39;
+    color: #b9ff39
 }
