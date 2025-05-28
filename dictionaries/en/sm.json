@@ -1,0 +1,49 @@
+{
+  "title": "Summary",
+  "experience": {
+    "title": "Key Competencies",
+    "items": [
+      {
+        "title": "Teamwork",
+        "description": "Experience in effective collaboration and communication within multidisciplinary teams.",
+        "details": [
+          "Flexibility in working with professionals from different backgrounds",
+          "Ability to listen and communicate ideas clearly",
+          "Conflict resolution skills"
+        ]
+      },
+      {
+        "title": "Responsibility",
+        "description": "Completing tasks on time with attention to detail.",
+        "details": [
+          "Independent time management",
+          "Meeting deadlines",
+          "High level of self-organization"
+        ]
+      },
+      {
+        "title": "Adaptability",
+        "description": "Quickly learning new technologies and work methods."
+      },
+      {
+        "title": "Creativity",
+        "description": "Generating new solutions for non-standard tasks."
+      }
+    ]
+  },
+  "education": {
+    "title": "Additional Education",
+    "items": [
+      {
+        "course": "Emotional Intelligence Development Course",
+        "organization": "Coursera",
+        "period": "2023"
+      },
+      {
+        "course": "Teamwork Training",
+        "organization": "Udemy",
+        "period": "2022"
+      }
+    ]
+  }
+}

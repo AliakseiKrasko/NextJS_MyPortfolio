@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React, { useEffect, useState } from 'react';
 import {
     SiJavascript, SiTypescript, SiReact, SiNextdotjs,
     SiRedux, SiCss3, SiSass, SiTailwindcss, SiStyledcomponents,
@@ -9,7 +11,7 @@ import {
 import {TbApi} from 'react-icons/tb';
 import {BsCodeSlash} from 'react-icons/bs';
 import {GrTest} from 'react-icons/gr';
-import {FaCode, FaMobileAlt} from 'react-icons/fa';
+import {FaCode} from 'react-icons/fa';
 import {MdAccessibility} from 'react-icons/md';
 import {AiOutlineTeam} from 'react-icons/ai';
 
@@ -46,6 +48,12 @@ export default function SkillsPage() {
         {name: "Agile/Scrum", icon: <AiOutlineTeam className="text-blue-500" size={40}/>},
     ];
 
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        setShow(true);
+    }, []);
+
     return (
         <div className="container mx-auto px-4 py-8">
             <h1 className="text-3xl font-bold mb-6">My Skills</h1>
@@ -53,7 +61,12 @@ export default function SkillsPage() {
                 {skills.map((skill, index) => (
                     <div
                         key={index}
-                        className="flex flex-col items-center p-4 bg-gray-300 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 skill-card"
+                        className={`
+                            flex flex-col items-center p-4 bg-gray-300 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg 
+                            transition-all duration-500 transform hover:-translate-y-1 skill-card
+                            ${show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
+                        `}
+                        style={{transitionDelay: `${index * 60}ms`}}
                     >
                         <div className="mb-3 transition-transform duration-300 hover:scale-110">{skill.icon}</div>
                         <h3 className="text-center font-medium">{skill.name}</h3>
