@@ -4,7 +4,8 @@
     "contact": "Контакты",
     "cv": "Резюме",
     "skills": ["Навыки"],
-    "about": "Обо мне"
+    "about": "Обо мне",
+    "project": "Портфолио"
   },
   "themeSwitcher": {
     "light": "Светлая",

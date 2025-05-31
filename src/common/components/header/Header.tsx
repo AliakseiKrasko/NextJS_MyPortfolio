@@ -15,6 +15,7 @@ type Props = {
             cv: string;
             skills: ["Навыки", "Skills"];
             about: string;
+            project: string;
         };
         general: {
             projectName: string;
@@ -33,6 +34,7 @@ export const Header = ({ lang, dictionary }: Props) => {
         { href: `/${lang}/cv`, label: dictionary.header.cv },
         { href: `/${lang}/skills`, label: dictionary.header.skills ? dictionary.header.skills[0] : "Skills" },
         { href: `/${lang}/about`, label: dictionary.header.about },
+        { href: `/${lang}/project`, label: dictionary.header.project },
     ];
 
     return (

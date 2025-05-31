@@ -4,7 +4,8 @@
     "contact": "Contact",
     "cv": "CV",
     "skills": ["Skills"],
-    "about": "About"
+    "about": "About",
+    "project": "Portfolio"
   },
   "themeSwitcher": {
     "light": "Light",

@@ -48,3 +48,7 @@ html.dark .home-border {
     border: 2px solid #b9ff39;
     color: #b9ff39
 }
+
+html.dark .card {
+    background: #191919;
+}
