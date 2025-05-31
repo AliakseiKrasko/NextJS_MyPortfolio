@@ -16,12 +16,6 @@ export default function RootLayout({
     return (
         <html lang={defaultLocale}>
         <body>
-        {/*<img
-            src="/123.jpg"
-            alt="Background"
-            className="fixed inset-0 w-full h-full object-cover opacity-50 -z-20 pointer-events-none"
-            style={{ objectPosition: "center" }}
-        />*/}
         <ParticlesBg />
         <ThemeProvider>
         {children}
