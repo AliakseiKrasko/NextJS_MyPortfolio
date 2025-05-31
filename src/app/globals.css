@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 html {
-    --text: #5a008c;
+    --text: #5749FF;
+
 }
 
 html.dark {

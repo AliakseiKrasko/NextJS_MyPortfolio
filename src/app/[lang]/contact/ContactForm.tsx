@@ -31,7 +31,7 @@ export default function ContactForm({ dict }: { dict: any }) {
         <>
             {success && (
                 <div className="mb-4 font-semibold"
-                     style={{ color: "#8dc72c" }}
+                     style={{ color: "#FFFFFF" }}
                 >
                     {dict.messageForm.successMessage || "Сообщение успешно отправлено!"}
                 </div>
@@ -78,7 +78,7 @@ export default function ContactForm({ dict }: { dict: any }) {
                 </div>
                 <button
                     type="submit"
-                    className="px-4 py-2 bg-[#b9ff39] text-black font-medium rounded-md hover:bg-[#8dc72c] transition-colors cursor-pointer"
+                    className="px-4 py-2 bg-white text-black font-medium rounded-md hover:bg-[#8dc72c] transition-colors cursor-pointer"
                 >
                     {dict.messageForm.submitButton}
                 </button>

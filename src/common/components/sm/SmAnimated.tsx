@@ -45,12 +45,8 @@ export const SmAnimated: React.FC<Props> = ({ dict }) => {
     }, []);
 
     return (
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-8 text-xl">
             <main className="max-w-4xl mx-auto">
-                <h1 className={`cv-text text-3xl font-bold mb-6 transition-all duration-700 ${show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-6"}`}>
-                    {dict.title}
-                </h1>
-
                 {dict.experience && (
                     <section className="mb-8">
                         <h2 className="text-2xl font-semibold mb-4 cv-text">{dict.experience.title}</h2>
@@ -61,10 +57,10 @@ export const SmAnimated: React.FC<Props> = ({ dict }) => {
                                     className={`mb-6 transition-all duration-700 ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
                                     style={{ transitionDelay: `${200 + index * 80}ms` }}
                                 >
-                                    <h3 className="text-xl font-medium">{item.title}</h3>
-                                    <p className="mt-2">{item.description}</p>
+                                    <h3 className=" home-text text-xl font-medium">{item.title}</h3>
+                                    <p className="mt-2 text-gray-600 home-text">{item.description}</p>
                                     {item.details && item.details.length > 0 && (
-                                        <ul className="list-disc ml-6 mt-2 cv-text text-sm">
+                                        <ul className="list-disc ml-6 mt-2 cv-text text-base text-gray-600">
                                             {item.details.map((detail, i) => (
                                                 <li key={i}>{detail}</li>
                                             ))}
@@ -102,7 +98,7 @@ export const SmAnimated: React.FC<Props> = ({ dict }) => {
                                     key={lang.language}
                                     className={`transition-all duration-700 ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
                                     style={{ transitionDelay: `${800 + index * 80}ms` }}>
-                                    <span className="font-medium">{lang.language}:</span> {lang.level}
+                                    <span className="font-medium text-gray-600 cv-text">{lang.language}:</span> {lang.level}
                                 </li>
                             ))}
                         </ul>

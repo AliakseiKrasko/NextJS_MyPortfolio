@@ -17,9 +17,9 @@ export const AboutAnimated: FC<Props> = ({ title, paragraphs, photoAlt }) => {
     }, []);
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-start pt-24 px-4 md:px-8">
+        <div className="min-h-screen flex flex-col items-center justify-start pt-24 px-4 md:px-8 cv-text">
             <h1
-                className={`text-4xl md:text-6xl font-bold mb-16 tracking-[0.5em] text-lime-400
+                className={`text-4xl md:text-6xl font-bold mb-16 tracking-[0.5em] text-[#3B3B3B] home-text
           ${loaded ? "opacity-100" : "opacity-0"}
           transition-opacity duration-1000 drop-shadow-[0_0_10px_rgba(163,230,53,0.5)] text-center`}
             >

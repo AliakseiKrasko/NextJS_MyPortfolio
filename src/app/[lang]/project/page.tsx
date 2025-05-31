@@ -16,7 +16,7 @@ export default async function ProjectPage({ params: { lang } }: { params: { lang
 
     return (
         <main className="min-h-screen py-10 text-white font-montserrat">
-            <h1 className="text-center text-3xl md:text-4xl text-lime-400 mb-10 font-bold">
+            <h1 className="text-center text-3xl md:text-4xl text-[#3B3B3B] mb-10 font-bold home-text">
                 {dict.title}
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
@@ -35,11 +35,11 @@ export default async function ProjectPage({ params: { lang } }: { params: { lang
                                 />
                             </div>
                             <div>
-                                <h2 className="text-lime-400 text-2xl font-semibold mb-3">{proj.title}</h2>
+                                <h2 className="text-gray-600 text-2xl font-semibold mb-3 home-text">{proj.title}</h2>
                                 <p className="mb-4 text-base">{proj.description}</p>
                                 <a
                                     href={proj.link}
-                                    className="text-lime-400 underline font-semibold text-base hover:text-white focus:text-white transition-colors"
+                                    className=" underline font-semibold hover:text-lime-400 focus:text-white transition-colors"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
@@ -56,10 +56,10 @@ export default async function ProjectPage({ params: { lang } }: { params: { lang
                         href="https://github.com/AliakseiKrasko?tab=repositories"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="relative px-8 py-3 bg-lime-400 text-[#191919] font-bold rounded-full shadow-lg overflow-hidden group transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-lime-400"
+                        className="relative px-8 py-3 bg-gray-400 text-[#191919] font-bold rounded-full shadow-lg overflow-hidden group transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-lime-400"
                     >
                         <span className="relative z-10">{dict.viewAllProjects}</span>
-                        <span className="absolute inset-0 w-full h-full bg-lime-500 opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"></span>
+                        <span className="absolute inset-0 w-full h-full bg-lime-500 opacity-0 rounded-full group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"></span>
                     </a>
                 </FadeIn>
             </div>

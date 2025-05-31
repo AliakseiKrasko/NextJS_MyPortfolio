@@ -45,7 +45,7 @@ const ContactAnimated: React.FC<Props> = ({ dict }) => {
                                 <a
                                     key={index}
                                     href={link.url}
-                                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                                    className="text-white  hover:underline hover:text-[#b9ff39]"
                                     target={link.url.startsWith('http') ? "_blank" : undefined}
                                     rel={link.url.startsWith('http') ? "noopener noreferrer" : undefined}
                                 >

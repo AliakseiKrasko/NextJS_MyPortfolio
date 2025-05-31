@@ -76,7 +76,7 @@ export default function HomeAnimated({ lang, common }: Props) {
                         <a
                             href="/Alex%20Krasko%20(1).pdf"
                             download
-                            className="border-2 border-violet-600 text-violet-600 px-6 py-3 rounded-md font-semibold flex items-center gap-2 hover:bg-gray-400 hover:text-black transition home-border"
+                            className="border-2  border-violet-600 text-violet-600 px-6 py-3 rounded-md font-semibold flex items-center gap-2 hover:bg-gray-400 hover:text-black transition home-border"
                         >
                             <svg width="22" height="22" fill="none">
                                 <path d="M12 16v-8m0 8l-4-4m4 4l4-4" stroke="currentColor" strokeWidth="2"

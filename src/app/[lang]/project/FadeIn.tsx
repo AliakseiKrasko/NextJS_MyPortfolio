@@ -9,7 +9,7 @@ export default function FadeIn({ children, delay = 0 }: { children: React.ReactN
         return () => clearTimeout(t);
     }, [delay]);
     return (
-        <div className={`transition-all duration-3000 ease-out ${show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <div className={`transition-all duration-700 ease-out ${show ? 'scale-100 translate-y-0' : 'scale-75 translate-y-8'}`}>
             {children}
         </div>
     );
