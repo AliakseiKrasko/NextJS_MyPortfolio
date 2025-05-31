@@ -2,7 +2,7 @@
   "header": {
     "home": "Home",
     "contact": "Contact",
-    "cv": "CV",
+    "cv": "Summary",
     "skills": ["Skills"],
     "about": "About",
     "project": "Portfolio"

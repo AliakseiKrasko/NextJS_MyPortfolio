@@ -6,7 +6,7 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: L
     const dict = await getTranslations(lang, 'sm');
     return {
         title: dict.title,
-        description: `${dict.title} - Summary`,
+        description: `${dict.title}`,
     };
 }
 

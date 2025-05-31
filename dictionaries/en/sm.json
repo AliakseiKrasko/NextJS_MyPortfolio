@@ -1,5 +1,4 @@
 {
-  "title": "Summary",
   "experience": {
     "title": "Key Competencies",
     "items": [
@@ -9,7 +8,9 @@
         "details": [
           "Flexibility in working with professionals from different backgrounds",
           "Ability to listen and communicate ideas clearly",
-          "Conflict resolution skills"
+          "Conflict resolution skills",
+          "Supporting colleagues and creating a positive atmosphere",
+          "Participating in joint problem-solving"
         ]
       },
       {
@@ -18,31 +19,74 @@
         "details": [
           "Independent time management",
           "Meeting deadlines",
-          "High level of self-organization"
+          "High level of self-organization",
+          "Taking responsibility for results",
+          "Accuracy and attention to detail"
         ]
       },
       {
         "title": "Adaptability",
-        "description": "Quickly learning new technologies and work methods."
+        "description": "Quickly learning new technologies and work methods.",
+        "details": [
+          "Willingness to adapt to changes",
+          "Mastering new tools and approaches",
+          "Quick response to new tasks",
+          "Flexible thinking",
+          "Ability to work in conditions of uncertainty"
+        ]
       },
       {
         "title": "Creativity",
-        "description": "Generating new solutions for non-standard tasks."
+        "description": "Generating new solutions for non-standard tasks.",
+        "details": [
+          "Developing original ideas",
+          "Applying unconventional approaches",
+          "Visualizing and presenting new concepts",
+          "Critical thinking",
+          "Inspiring colleagues to seek new solutions"
+        ]
       }
     ]
   },
   "education": {
-    "title": "Additional Education",
+    "title": "Education",
     "items": [
       {
-        "course": "Emotional Intelligence Development Course",
-        "organization": "Coursera",
+        "course": "Frontend Developer",
+        "organization": "IT-INCUBATOR",
+        "period": "2024"
+      },
+      {
+        "course": "JavaScript Developer",
+        "organization": "WebCademy",
         "period": "2023"
       },
       {
-        "course": "Teamwork Training",
-        "organization": "Udemy",
+        "course": "Frontend Developer",
+        "organization": "itProger",
         "period": "2022"
+      },
+      {
+        "course": "Engineer",
+        "organization": "Belarusian National Technical University",
+        "period": "2015"
+      }
+    ]
+  },
+  "languages": {
+    "title": "Languages",
+    "items": [
+      {
+        "language": "Russian",
+        "level": "Native"
+      },
+      {
+        "language": "English",
+        "level": "B1 (Intermediate)"
+      },
+      {
+        "language": "Polish",
+        "level": "C1 (Advanced)"
       }
     ]
   }

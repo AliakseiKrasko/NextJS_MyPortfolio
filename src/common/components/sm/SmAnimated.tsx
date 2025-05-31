@@ -14,6 +14,11 @@ type SmEducationItem = {
     period: string;
 };
 
+type SmLanguageItem = {
+    language: string;
+    level: string;
+};
+
 type Props = {
     dict: {
         title: string;
@@ -24,6 +29,10 @@ type Props = {
         education?: {
             title: string;
             items: SmEducationItem[];
+        };
+        languages?: {
+            title: string;
+            items: SmLanguageItem[];
         };
     };
 };
@@ -38,14 +47,14 @@ export const SmAnimated: React.FC<Props> = ({ dict }) => {
     return (
         <div className="container mx-auto px-4 py-8">
             <main className="max-w-4xl mx-auto">
-                <h1 className={`text-3xl font-bold mb-6 transition-all duration-700 ${show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-6"}`}>
+                <h1 className={`cv-text text-3xl font-bold mb-6 transition-all duration-700 ${show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-6"}`}>
                     {dict.title}
                 </h1>
 
                 {dict.experience && (
                     <section className="mb-8">
-                        <h2 className="text-2xl font-semibold mb-4">{dict.experience.title}</h2>
-                        <div className="border-l-2 border-gray-400 pl-4 cv-text">
+                        <h2 className="text-2xl font-semibold mb-4 cv-text">{dict.experience.title}</h2>
+                        <div className="border-l-2 border-gray-400 pl-4 home-text">
                             {dict.experience.items.map((item, index) => (
                                 <div
                                     key={index}
@@ -82,6 +91,21 @@ export const SmAnimated: React.FC<Props> = ({ dict }) => {
                                 </div>
                             ))}
                         </div>
+                    </section>
+                )}
+                {dict.languages && (
+                    <section className="mb-8">
+                        <h2 className="text-2xl font-semibold mb-4">{dict.languages.title}</h2>
+                        <ul className="pl-4">
+                            {dict.languages.items.map((lang, index) => (
+                                <li
+                                    key={lang.language}
+                                    className={`transition-all duration-700 ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
+                                    style={{ transitionDelay: `${800 + index * 80}ms` }}>
+                                    <span className="font-medium">{lang.language}:</span> {lang.level}
+                                </li>
+                            ))}
+                        </ul>
                     </section>
                 )}
             </main>
