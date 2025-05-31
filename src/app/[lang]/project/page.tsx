@@ -42,11 +42,22 @@ export default async function ProjectPage({ params: { lang } }: { params: { lang
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                {dict.projects.viewProject}
+                                {dict.viewProject}
                             </a>
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="flex justify-center mt-16">
+                <a
+                    href="https://github.com/AliakseiKrasko?tab=repositories"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative px-8 py-3 bg-lime-400 text-[#191919] font-bold rounded-full shadow-lg overflow-hidden group transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-lime-400"
+                >
+                    <span className="relative z-10">{dict.viewAllProjects}</span>
+                    <span className="absolute inset-0 w-full h-full bg-lime-500 opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"></span>
+                </a>
             </div>
         </main>
     );

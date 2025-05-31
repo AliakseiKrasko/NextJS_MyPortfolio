@@ -1,6 +1,7 @@
 {
   "title": "Портфолио",
   "viewProject": "Смотреть проект",
+  "viewAllProjects": "Посмотреть все мои проекты",
   "projects": [
     {
       "title": "Learning Platform",

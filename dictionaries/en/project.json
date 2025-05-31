@@ -1,11 +1,12 @@
 {
   "title": "Portfolio",
   "viewProject": "View project",
+  "viewAllProjects": "View all my projects",
   "projects": [
     {
       "title": "Learning Platform",
       "description": "This application is designed for effective learning through flashcards that contain questions and answers. Users can create their own sets of flashcards or utilize pre-made decks. The application also allows adding images and videos to the flashcards to enhance information retention.",
-      "link": "#",
+      "link": "https://google.com",
       "image": "/project4.png"
     },
     {
