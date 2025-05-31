@@ -41,40 +41,5 @@
         "period": "2012 - 2016"
       }
     ]
-  },
-  "skills": {
-    "title": "Skills",
-    "items": [
-      "JavaScript (ES6+)",
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Redux Toolkit",
-      "RTK Query",
-      "CSS3",
-      "SCSS/SASS",
-      "Tailwind CSS",
-      "Styled-components",
-      "Git",
-      "Webpack",
-      "Vite",
-      "ESLint",
-      "Prettier",
-      "Storybook",
-      "Jest",
-      "React Testing Library",
-      "Cypress",
-      "REST",
-      "GraphQL",
-      "WebSockets",
-      "Docker (basic skills)",
-      "GitHub Actions",
-      "CI/CD",
-      "i18n",
-      "Pixel Perfect",
-      "Responsive & accessible layout (a11y)",
-      "Code Review",
-      "Agile/Scrum"
-    ]
   }
 }

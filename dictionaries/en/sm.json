@@ -48,6 +48,27 @@
       }
     ]
   },
+  "keyResponsibilities": {
+    "title": "KEY RESPONSIBILITIES",
+    "items": [
+      "Organized team development according to the design system using Git.",
+      "Implemented state management with Redux, optimized architecture using Redux Toolkit and RTK Query.",
+      "Integrated asynchronous data processing via Redux-thunk and Axios, interacted with REST and GraphQL API.",
+      "Used Postman and Swagger for API testing and documentation.",
+      "Developed forms with validation using React Hook Form, Formik, Redux-form, and Zod.",
+      "Configured navigation between pages using React Router / App Router.",
+      "Used Storybook to test server requests and visualize components.",
+      "Implemented authorization block: account creation and editing, password recovery and reset, login and logout.",
+      "Integrated WebSocket for chat, ensuring stable server connection.",
+      "Developed polymorphic and custom components using Radix UI and native tools.",
+      "Styled the app using CSS, SASS, Styled Components, Tailwind, as well as Material UI and Antd.",
+      "Applied TDD methodology, wrote tests using Jest and Cypress to ensure high code quality.",
+      "Implemented internationalization (i18n) for multilingual support.",
+      "Configured linting and code formatting with ESLint and Prettier.",
+      "Implemented CI/CD processes with GitHub Actions, GitLab CI, and Jenkins.",
+      "Configured deployment, worked with Docker and Kubernetes, and with cloud services for automation and scalability."
+    ]
+  },
   "education": {
     "title": "Education",
     "items": [
