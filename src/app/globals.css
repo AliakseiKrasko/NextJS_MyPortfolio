@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-    --text: #5749FF;
+    --text: #333333;
     background: blue;
 
 }
@@ -17,11 +17,12 @@ body {
     flex-direction: column;
     color: var(--text);
     min-height: 100vh;
-    /*background-image: url('/istock_light.jpg'); !* путь к светлой картинке *!*/
+    background: linear-gradient(135deg, #a4cde6 0%, #e88abf 50%, #bccaf4 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 
 /* Темная тема */
 html.dark body {

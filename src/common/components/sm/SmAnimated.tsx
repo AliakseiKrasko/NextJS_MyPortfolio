@@ -57,7 +57,7 @@ export const SmAnimated: React.FC<Props> = ({ dict }) => {
                     {dict.experience && (
                         <section>
                             <h2 className="text-2xl font-semibold mb-4">{dict.experience.title}</h2>
-                            <div className="border-l-2 border-gray-400 pl-4 home-text">
+                            <div className="border-l-2 border-gray-300 pl-4 home-text">
                                 {dict.experience.items.map((item, index) => (
                                     <div
                                         key={index}
