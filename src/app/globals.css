@@ -4,6 +4,7 @@
 
 html {
     --text: #5749FF;
+    background: blue;
 
 }
 
@@ -16,7 +17,7 @@ body {
     flex-direction: column;
     color: var(--text);
     min-height: 100vh;
-    background-image: url('/istock_light.jpg'); /* путь к светлой картинке */
+    /*background-image: url('/istock_light.jpg'); !* путь к светлой картинке *!*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

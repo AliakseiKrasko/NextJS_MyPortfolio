@@ -16,12 +16,14 @@ export default async function ProjectPage({ params: { lang } }: { params: { lang
 
     return (
         <main className="min-h-screen py-10 text-white font-montserrat">
-            <h1 className="text-center text-3xl md:text-4xl text-[#3B3B3B] mb-10 font-bold home-text">
-                {dict.title}
-            </h1>
+            <FadeIn delay={100}>
+                <h1 className="text-center text-3xl md:text-4xl text-[#3B3B3B] mb-10 font-bold home-text">
+                    {dict.title}
+                </h1>
+            </FadeIn>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
                 {projects.map((proj, i) => (
-                    <FadeIn key={proj.title} delay={i * 120}>
+                    <FadeIn key={proj.title} delay={i * 200}>
                         <div
                             className="bg-[#99a1af] rounded-2xl border-2 border-[#393e28] shadow-[0_0_10px_#191919,0_0_0_2px_#c4ff00_inset] transition-shadow duration-300 flex flex-col p-8 hover:shadow-[0_0_20px_#c4ff00,0_0_0_2px_#c4ff00_inset] card"
                         >
