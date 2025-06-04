@@ -16,7 +16,7 @@ export default function ParticlesBg() {
             options={{
                 background: { color: "transparent" },
                 particles: {
-                    number: { value: 80, density: { enable: true } },
+                    number: { value: 120, density: { enable: true } },
                     color: { value: "#084aed" },
                     shape: { type: "circle" },
                     opacity: { value: 0.6 },
