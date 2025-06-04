@@ -25,7 +25,7 @@ export const AboutAnimated: FC<Props> = ({ title, paragraphs, photoAlt }) => {
             >
                 {title}
             </h1>
-            <div className="w-full max-w-6xl h-px bg-gradient-to-r from-transparent via-lime-400/50 to-transparent mb-16"></div>
+            <div className="w-full max-w-6xl h-px bg-gradient-to-r from-transparent via-white to-transparent mb-16"></div>
             <div className="w-full max-w-6xl flex flex-col md:flex-row gap-12 md:gap-16">
                 <div className="flex-1 space-y-8">
                     {paragraphs.map((text, idx) => (
