@@ -6,7 +6,7 @@ import {
     SiRedux, SiCss3, SiSass, SiTailwindcss, SiStyledcomponents,
     SiGit, SiWebpack, SiVite, SiEslint, SiPrettier, SiStorybook,
     SiJest, SiTestinglibrary, SiCypress, SiGraphql, SiDocker,
-    SiGithubactions,
+    SiGithubactions, SiJenkins,
 } from 'react-icons/si';
 import {TbApi} from 'react-icons/tb';
 import {BsCodeSlash} from 'react-icons/bs';
@@ -46,6 +46,7 @@ export default function SkillsPage() {
         {name: "Responsive & accessible layout (a11y)", icon: <MdAccessibility className="text-green-600" size={40}/>},
         {name: "Code Review", icon: <BsCodeSlash className="text-gray-700" size={40}/>},
         {name: "Agile/Scrum", icon: <AiOutlineTeam className="text-blue-500" size={40}/>},
+        {name: "Jenkins", icon: <SiJenkins className="text-red-700" size={40}/>},
     ];
 
     const [show, setShow] = useState(false);
