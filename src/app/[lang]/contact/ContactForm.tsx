@@ -1,18 +1,28 @@
 "use client";
-import { useRef, useState } from "react";
+import { useForm } from "react-hook-form";
+import { useState } from "react";
+
+type ContactFormFields = {
+    name: string;
+    email: string;
+    message: string;
+};
 
 export default function ContactForm({ dict }: { dict: any }) {
-    const formRef = useRef<HTMLFormElement>(null);
+    const {
+        register,
+        handleSubmit,
+        reset,
+        formState: { errors, isSubmitSuccessful },
+    } = useForm<ContactFormFields>();
     const [success, setSuccess] = useState(false);
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-
-        const form = formRef.current;
-        if (!form) return;
-
-        // Отправляем данные как FormData на Formspree
-        const formData = new FormData(form);
+    const onSubmit = async (data: ContactFormFields) => {
+        // Формируем данные для отправки
+        const formData = new FormData();
+        formData.append("name", data.name);
+        formData.append("email", data.email);
+        formData.append("message", data.message);
 
         await fetch("https://formspree.io/f/xeogbjdv", {
             method: "POST",
@@ -20,23 +30,19 @@ export default function ContactForm({ dict }: { dict: any }) {
             headers: { Accept: "application/json" },
         });
 
-        form.reset(); // очищаем поля
+        reset();
         setSuccess(true);
-
-        // Убираем сообщение через 3 секунды
         setTimeout(() => setSuccess(false), 3000);
     };
 
     return (
         <>
             {success && (
-                <div className="mb-4 font-semibold"
-                     style={{ color: "#FFFFFF" }}
-                >
+                <div className="mb-4 font-semibold" style={{ color: "#FFFFFF" }}>
                     {dict.messageForm.successMessage || "Сообщение успешно отправлено!"}
                 </div>
             )}
-            <form ref={formRef} onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="mb-4">
                     <label htmlFor="name" className="block mb-1 font-medium">
                         {dict.messageForm.nameField.label}
@@ -44,11 +50,15 @@ export default function ContactForm({ dict }: { dict: any }) {
                     <input
                         type="text"
                         id="name"
-                        name="name"
+                        {...register("name", { required: true })}
                         placeholder={dict.messageForm.nameField.placeholder}
-                        required
                         className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-gray-300 dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
+                    {errors.name && (
+                        <span className="text-red-500 text-sm">
+              {dict.messageForm.nameField.error || "Поле обязательно"}
+            </span>
+                    )}
                 </div>
                 <div className="mb-4">
                     <label htmlFor="email" className="block mb-1 font-medium">
@@ -57,11 +67,15 @@ export default function ContactForm({ dict }: { dict: any }) {
                     <input
                         type="email"
                         id="email"
-                        name="email"
+                        {...register("email", { required: true })}
                         placeholder={dict.messageForm.emailField.placeholder}
-                        required
                         className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-gray-300 dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
+                    {errors.email && (
+                        <span className="text-red-500 text-sm">
+              {dict.messageForm.emailField.error || "Поле обязательно"}
+            </span>
+                    )}
                 </div>
                 <div className="mb-4">
                     <label htmlFor="message" className="block mb-1 font-medium">
@@ -69,12 +83,16 @@ export default function ContactForm({ dict }: { dict: any }) {
                     </label>
                     <textarea
                         id="message"
-                        name="message"
+                        {...register("message", { required: true })}
                         placeholder={dict.messageForm.messageField.placeholder}
-                        required
                         rows={4}
                         className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-gray-300 dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     ></textarea>
+                    {errors.message && (
+                        <span className="text-red-500 text-sm">
+              {dict.messageForm.messageField.error || "Поле обязательно"}
+            </span>
+                    )}
                 </div>
                 <button
                     type="submit"
