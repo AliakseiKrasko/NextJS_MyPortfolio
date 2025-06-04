@@ -22,16 +22,19 @@
     "title": "Send Me a Message",
     "nameField": {
       "label": "Your Name",
-      "placeholder": "Enter your name"
+      "placeholder": "Enter your name",
+      "error": "This field is required"
     },
     "successMessage": "Message sent successfully!",
     "emailField": {
       "label": "Email",
-      "placeholder": "Enter your email"
+      "placeholder": "Enter your email",
+      "error": "This field is required"
     },
     "messageField": {
       "label": "Message",
-      "placeholder": "Type your message here"
+      "placeholder": "Type your message here",
+      "error": "This field is required"
     },
     "submitButton": "Send"
   },

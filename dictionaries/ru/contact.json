@@ -23,15 +23,18 @@
     "nameField": {
       "label": "Ваше имя",
       "placeholder": "Введите ваше имя",
-      "successMessage": "Сообщение успешно отправлено!"
+      "successMessage": "Сообщение успешно отправлено!",
+      "error": "Поле обязательно"
     },
     "emailField": {
       "label": "Email",
-      "placeholder": "Введите ваш email"
+      "placeholder": "Введите ваш email",
+      "error": "Поле обязательно"
     },
     "messageField": {
       "label": "Сообщение",
-      "placeholder": "Введите ваше сообщение"
+      "placeholder": "Введите ваше сообщение",
+      "error": "Поле обязательно"
     },
     "submitButton": "Отправить"
   },
