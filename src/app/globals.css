@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     color: var(--text);
     min-height: 100vh;
-    background: linear-gradient(135deg, #dbaaf3 0%, #9595c6 50%, #76c5b1 100%);
+    background: linear-gradient(135deg, #dbaaf3 0%, rgba(149, 149, 198, 0.82) 50%, #76c5b1 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
