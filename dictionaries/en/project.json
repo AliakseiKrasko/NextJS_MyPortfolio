@@ -4,28 +4,28 @@
   "viewAllProjects": "View all my projects",
   "projects": [
     {
-      "title": "Learning Platform",
-      "description": "This application is designed for effective learning through flashcards that contain questions and answers. Users can create their own sets of flashcards or utilize pre-made decks. The application also allows adding images and videos to the flashcards to enhance information retention.",
-      "link": "https://google.com",
+      "title": "MovieSearch",
+      "description": "MovieSearch is a modern web application for searching movies and TV series.\nThe app allows users to easily find interesting movies and shows, use filters, save favorite films to a \"Favorites\" list, and view the history of their search queries.",
+      "link": "https://github.com/AliakseiKrasko/movie-search-app",
       "image": "/1.png"
     },
     {
-      "title": "Friend Connect",
-      "description": "Friend Connect is a web application that serves as a social networking platform. It provides users with a platform to connect, interact, and share content with friends and acquaintances. With personalized profiles, messaging functionality, and news feeds, Friend Connect creates a vibrant online community where users can stay connected and engage with their social circles.",
-      "link": "#",
+      "title": "GitHub User Explorer",
+      "description": "GitHub User Explorer is an application for searching GitHub users with detailed account statistics.\nIt features username search, data visualization (repositories, languages, followers), and a search history.",
+      "link": "https://github.com/AliakseiKrasko/github-user-explorer",
       "image": "/2.png"
     },
     {
-      "title": "Check Flow",
-      "description": "The \"Check Flow\" project provides a convenient interface for creating, editing, deleting, and displaying tasks and to-do lists. Users can easily add new tasks, set their completion status.",
-      "link": "#",
+      "title": "CRM application system",
+      "description": "The CRM Application for Requests is an internal web application for an online education center, designed for receiving, tracking, and processing enrollment requests for various IT courses.",
+      "link": "https://github.com/AliakseiKrasko/project_CRM",
       "image": "/3.png"
     },
     {
-      "title": "Home Store",
-      "description": "HomeStore is an online furniture store that is under active development.",
-      "link": "#",
-      "image": "/4.png"
+      "title": "UI-kit library",
+      "description": "A UI-kit library is a professionally designed set of user interface components for use in commercial web applications.\nThe library provides a consistent style, enables rapid interface development, and accelerates the overall product development process.",
+      "link": "https://github.com/ictroot70/ui-kit",
+      "image": "/6.png"
     }
   ]
 }
