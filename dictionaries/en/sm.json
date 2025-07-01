@@ -51,22 +51,21 @@
   "keyResponsibilities": {
     "title": "KEY RESPONSIBILITIES",
     "items": [
-      "Organized team development according to the design system using Git.",
-      "Implemented state management with Redux, optimized architecture using Redux Toolkit and RTK Query.",
-      "Integrated asynchronous data processing via Redux-thunk and Axios, interacted with REST and GraphQL API.",
-      "Used Postman and Swagger for API testing and documentation.",
-      "Developed forms with validation using React Hook Form, Formik, Redux-form, and Zod.",
-      "Configured navigation between pages using React Router / App Router.",
-      "Used Storybook to test server requests and visualize components.",
-      "Implemented authorization block: account creation and editing, password recovery and reset, login and logout.",
-      "Integrated WebSocket for chat, ensuring stable server connection.",
-      "Developed polymorphic and custom components using Radix UI and native tools.",
-      "Styled the app using CSS, SASS, Styled Components, Tailwind, as well as Material UI and Antd.",
-      "Applied TDD methodology, wrote tests using Jest and Cypress to ensure high code quality.",
-      "Implemented internationalization (i18n) for multilingual support.",
-      "Configured linting and code formatting with ESLint and Prettier.",
-      "Implemented CI/CD processes with GitHub Actions, GitLab CI, and Jenkins.",
-      "Configured deployment, worked with Docker and Kubernetes, and with cloud services for automation and scalability."
+      "Organized team development based on a predefined design system using Git and Agile/Scrum methodologies.",
+      "Developed a scalable application architecture and implemented efficient state management with Redux Toolkit and RTK Query.",
+      "Optimized asynchronous data handling (Redux-thunk, Axios, REST/GraphQL API), integrated and tested APIs using Postman and Swagger.",
+      "Built user-friendly and secure forms with validation (React Hook Form, Formik, Zod).",
+      "Configured modern routing (React Router, App Router), ensuring reliable navigation between pages.",
+      "Implemented authentication with password recovery, account creation and editing, and secure login/logout functionality.",
+      "Integrated real-time features via WebSocket (chat functionality).",
+      "Created polymorphic and custom UI components using Radix UI, Material UI, Antd, Styled Components, and Tailwind CSS.",
+      "Implemented internationalization (i18n) to support multiple languages.",
+      "Used Storybook for visual testing and documentation of components.",
+      "Applied TDD practices, writing unit and end-to-end tests (Jest, Cypress) to ensure code quality.",
+      "Automated CI/CD processes with GitHub Actions, GitLab CI, and Jenkins.",
+      "Configured deployment and orchestration using Docker, Kubernetes, and cloud services (Vercel, Netlify, AWS).",
+      "Improved code quality and stability through linting and auto-formatting (ESLint, Prettier).",
+      "Enhanced performance and security by optimizing resource loading and implementing best practices (SSR/SSG, code splitting, a11y)."
     ]
   },
   "education": {

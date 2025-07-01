@@ -49,7 +49,7 @@ export const SmAnimated: React.FC<Props> = ({ dict }) => {
     }, []);
 
     return (
-        <div className="container mx-auto px-4 py-8 text-xl">
+        <div className="container mx-auto px-4 pb-15 py-8 text-xl">
             {/* Увеличиваем максимальную ширину: max-w-7xl */}
             <main className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
                 {/* Левый столбец — 1/3 */}
