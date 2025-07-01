@@ -1,10 +1,12 @@
 {
   "title": "About me",
   "paragraphs": [
-    "Hello! My name is Aliaksei. I am a frontend developer with experience in Single Page Application development using TypeScript, JavaScript, React, Redux, Redux-toolkit, and RTK Query.",
-    "I am constantly improving my skills in these technologies and am also actively studying Next.js and React Native to expand my capabilities and achieve a higher level of professionalism in my work. In my free time, I solve problems on Codewars, which helps me develop and maintain my skills in algorithmic thinking.",
-    "My main development priority is to create efficient and clean code that is easy to maintain and scale. I strive to create high-quality, intuitive, and accessible user interfaces.",
-    "I am open to considering different options for cooperation (remote, hybrid, part-time, and full-time)."
+    "Hi! My name is Aleksei. I am a frontend developer with over two years of experience building modern single-page applications (SPAs) using TypeScript, JavaScript, React, Next.js, Redux, Redux Toolkit, and RTK Query.",
+    "My main priority is to write efficient, clean, and maintainable code, following modern best practices and scalable development principles. I strive to create high-quality, intuitive, and accessible user interfaces that are easy to develop and maintain in the long term.",
+    "I am constantly improving my professional skills, learning new technologies and tools. In my free time, I solve algorithmic problems to maintain a high level of technical proficiency and develop my problem-solving mindset.",
+    "I value honest and constructive feedback, and I am comfortable working both independently and as part of a team. I am open to various formats of cooperation (remote, hybrid, part-time, or full-time).",
+    "In addition to frontend development, I have basic knowledge of CI/CD and containerization (Docker, Kubernetes), and I am interested in backend development and actively studying DevOps approaches to be as useful as possible in complex projects.",
+    "I am always open to new and interesting challenges, collaborative projects, and opportunities for professional growth!,"
   ],
   "photoAlt": "Profile photo by the lake"
 }
