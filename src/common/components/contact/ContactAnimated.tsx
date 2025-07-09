@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import ContactForm from "@/app/[lang]/contact/ContactForm";
-
+import { ContactForm } from "@/app/[lang]/contact/ContactForm";
+import { ContactPageDict } from "@/app/[lang]/contact/types";
 
 type Props = {
-    dict: any;
+    dict: ContactPageDict;
 };
 
 const ContactAnimated: React.FC<Props> = ({ dict }) => {
@@ -36,12 +36,13 @@ const ContactAnimated: React.FC<Props> = ({ dict }) => {
                     </div>
                     <div className="mb-6">
                         <h2 className="text-xl font-semibold mb-4">{dict.messageForm.title}</h2>
-                        <ContactForm dict={dict} />
+                        {/* !!! Важно: теперь передаём только messageForm */}
+                        <ContactForm dict={dict.messageForm} />
                     </div>
                     <div>
                         <h2 className="text-xl font-semibold mb-2">{dict.socialMedia.title}</h2>
                         <div className="flex gap-4">
-                            {dict.socialMedia.links.map((link: { name: string; url: string }, index: number) => (
+                            {dict.socialMedia.links.map((link, index) => (
                                 <a
                                     key={index}
                                     href={link.url}
