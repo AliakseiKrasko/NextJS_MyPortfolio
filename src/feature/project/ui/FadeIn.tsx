@@ -3,7 +3,7 @@ import { FC, ReactNode, useEffect, useState } from "react";
 
 type FadeInProps = {
     children: ReactNode;
-    delay?: number; // в миллисекундах
+    delay?: number;
     className?: string;
 };
 
