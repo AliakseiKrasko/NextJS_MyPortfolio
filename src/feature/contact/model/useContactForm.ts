@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
-import { ContactFormFields } from "@/app/[lang]/contact/types";
+import { ContactFormFields } from "@/feature/contact/type/types";
 
 export function useContactForm() {
     const {

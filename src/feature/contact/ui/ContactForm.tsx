@@ -1,7 +1,7 @@
 "use client";
 
-import {useContactForm} from "@/common/components/contact/useContactForm";
-import {MessageFormDict} from "@/app/[lang]/contact/types";
+import {useContactForm} from "@/feature/contact/model/useContactForm";
+import {MessageFormDict} from "@/feature/contact/type/types";
 
 
 type Props = {

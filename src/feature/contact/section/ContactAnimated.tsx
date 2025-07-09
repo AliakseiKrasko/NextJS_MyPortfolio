@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { ContactForm } from "@/app/[lang]/contact/ContactForm";
-import { ContactPageDict } from "@/app/[lang]/contact/types";
+import { ContactForm } from "@/feature/contact/ui/ContactForm";
+import { ContactPageDict } from "@/feature/contact/type/types";
 
 type Props = {
     dict: ContactPageDict;

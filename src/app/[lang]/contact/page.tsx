@@ -1,5 +1,5 @@
 import { Locale, getTranslations } from '../../../../i18n-config';
-import ContactAnimated from "@/common/components/contact/ContactAnimated";
+import ContactAnimated from "@/feature/contact/section/ContactAnimated";
 
 
 export async function generateMetadata({ params: { lang } }: { params: { lang: Locale } }) {
