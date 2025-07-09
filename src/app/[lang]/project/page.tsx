@@ -25,7 +25,7 @@ export default async function ProjectPage({ params: { lang } }: { params: { lang
                 {projects.map((proj, i) => (
                     <FadeIn key={proj.title} delay={i * 200}>
                         <div
-                            className="bg-[#99a1af] rounded-2xl border-2 border-[#393e28] shadow-[0_0_10px_#191919,0_0_0_2px_#c4ff00_inset] transition-shadow duration-300 flex flex-col p-8 hover:shadow-[0_0_20px_#c4ff00,0_0_0_2px_#c4ff00_inset] card"
+                            className="bg-[#99a1af] rounded-2xl border-2 border-[#393e28] shadow-[0_0_10px_#191919,0_0_0_2px_#c4ff00_inset] transition-shadow duration-300 flex flex-col p-8 hover:shadow-[0_0_20px_#c4ff00,0_0_0_2px_#c4ff00_inset] card h-full"
                         >
                             <div className="mb-6 rounded-xl overflow-hidden">
                                 <Image
