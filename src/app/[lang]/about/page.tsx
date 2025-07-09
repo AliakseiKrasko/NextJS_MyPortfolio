@@ -1,12 +1,7 @@
 import { Locale, getTranslations } from '../../../../i18n-config';
-import {AboutAnimated} from "@/common/components/about/AboutAnimated";
+import {AboutAnimated} from "@/feature/about/ui/AboutAnimated";
+import {AboutDict} from "@/feature/about/type/type";
 
-
-type AboutDict = {
-    title: string;
-    paragraphs: string[];
-    photoAlt: string;
-};
 
 export async function generateMetadata({ params: { lang } }: { params: { lang: Locale } }) {
     const dict: AboutDict = await getTranslations(lang, 'about');
