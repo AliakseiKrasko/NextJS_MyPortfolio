@@ -1,54 +1,26 @@
 "use client";
 
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import {
-    SiAntdesign,
-    SiCss3,
-    SiCypress,
-    SiDocker,
-    SiEslint,
-    SiFigma,
-    SiGit,
-    SiGithubactions, SiGitlab,
-    SiGraphql, SiHtml5,
-    SiJavascript,
-    SiJenkins,
-    SiJest,
-    SiJirasoftware,
-    SiKubernetes,
-    SiNetlify,
-    SiNextdotjs,
-    SiNotion,
-    SiNpm,
-    SiPnpm,
-    SiPrettier,
-    SiRadixui,
-    SiReact,
-    SiReacthookform,
-    SiRedux,
-    SiSass,
-    SiStorybook,
-    SiStyledcomponents,
-    SiTailwindcss,
-    SiTestinglibrary,
-    SiTrello,
-    SiTypescript,
-    SiVercel,
-    SiVite,
-    SiWebpack,
-    SiYarn,
-    SiZod,
+    SiAntdesign, SiCss3, SiCypress, SiDocker, SiEslint, SiFigma, SiGit, SiGithubactions, SiGitlab,
+    SiGraphql, SiHtml5, SiJavascript, SiJenkins, SiJest, SiJirasoftware, SiKubernetes, SiNetlify,
+    SiNextdotjs, SiNotion, SiNpm, SiPnpm, SiPrettier, SiRadixui, SiReact, SiReacthookform, SiRedux,
+    SiSass, SiStorybook, SiStyledcomponents, SiTailwindcss, SiTestinglibrary, SiTrello, SiTypescript,
+    SiVercel, SiVite, SiWebpack, SiYarn, SiZod,
 } from 'react-icons/si';
-import {TbApi} from 'react-icons/tb';
-import {BsCodeSlash} from 'react-icons/bs';
-import {GrTest} from 'react-icons/gr';
-import {FaCode} from 'react-icons/fa';
-import {MdAccessibility} from 'react-icons/md';
-import {AiOutlineTeam} from 'react-icons/ai';
-import {FaWpforms} from "react-icons/fa6";
+import { TbApi } from 'react-icons/tb';
+import { BsCodeSlash } from 'react-icons/bs';
+import { GrTest } from 'react-icons/gr';
+import { FaCode } from 'react-icons/fa';
+import { MdAccessibility } from 'react-icons/md';
+import { AiOutlineTeam } from 'react-icons/ai';
+import { FaWpforms } from "react-icons/fa6";
+import {Skill} from "@/feature/skills/type/type";
+import SkillCard from "@/feature/skills/ui/SkillCard";
+
 
 export default function SkillsPage() {
-    const skills = [
+    const skills: Skill[] = [
         { name: "HTML5", icon: <SiHtml5 className="text-orange-500" size={40} /> },
         {name: "JavaScript (ES6+)", icon: <SiJavascript className="text-yellow-400" size={40}/>},
         {name: "TypeScript", icon: <SiTypescript className="text-blue-500" size={40}/>},
@@ -110,18 +82,12 @@ export default function SkillsPage() {
             <h1 className="text-3xl font-bold mb-6 text-[#3B3B3B] cv-text">My Skills</h1>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {skills.map((skill, index) => (
-                    <div
-                        key={index}
-                        className={`
-                            flex flex-col items-center p-4 bg-gray-300 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg 
-                            transition-all duration-500 transform hover:-translate-y-1 skill-card
-                            ${show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
-                        `}
-                        style={{transitionDelay: `${index * 60}ms`}}
-                    >
-                        <div className="mb-3 transition-transform duration-300 hover:scale-110">{skill.icon}</div>
-                        <h3 className="text-center font-medium">{skill.name}</h3>
-                    </div>
+                    <SkillCard
+                        key={skill.name}
+                        skill={skill}
+                        show={show}
+                        delay={index * 60}
+                    />
                 ))}
             </div>
         </div>
