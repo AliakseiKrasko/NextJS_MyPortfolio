@@ -1,44 +1,10 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-
-type SmExperienceItem = {
-    title: string;
-    description: string;
-    details?: string[];
-};
-
-type SmEducationItem = {
-    course: string;
-    organization: string;
-    period: string;
-};
-
-type SmLanguageItem = {
-    language: string;
-    level: string;
-};
+import {SmDict} from "@/feature/cv/type/type";
 
 type Props = {
-    dict: {
-        title: string;
-        experience?: {
-            title: string;
-            items: SmExperienceItem[];
-        };
-        keyResponsibilities?: {
-            title: string;
-            items: string[];
-        };
-        education?: {
-            title: string;
-            items: SmEducationItem[];
-        };
-        languages?: {
-            title: string;
-            items: SmLanguageItem[];
-        };
-    };
+    dict: SmDict;
 };
 
 export const SmAnimated: React.FC<Props> = ({ dict }) => {
