@@ -16,7 +16,7 @@ const ContactAnimated: React.FC<Props> = ({ dict }) => {
     }, []);
 
     return (
-        <div className={`container mx-auto px-4 py-8 transition-all duration-700 ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+        <div className={`container mx-auto px-4 transition-all duration-700 ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
             <main className="max-w-2xl mx-auto">
                 <h1 className={`text-3xl font-bold mb-6 transition-all duration-700 ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
                     {dict.title}
