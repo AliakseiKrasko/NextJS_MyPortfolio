@@ -14,13 +14,13 @@ export default function HomeAnimatedView({
     return (
         <div className={`relative overflow-hidden transition-all duration-700 ${show ? 'opacity-100' : 'opacity-0'}`}>
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 pt-8 max-w-5xl mx-auto px-4">
-                <div className={`bg-white/5 border border-violet-600 rounded-2xl p-4 shadow-lg w-full max-w-[380px] md:max-w-[580px] mx-auto transition-all duration-700 ${show ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+                <div className={`bg-white/5 border border-violet-600 rounded-2xl p-4 shadow-lg w-full max-w-[380px] md:max-w-[460px] mx-auto transition-all duration-700 ${show ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                     <Image
                         src="/my-photo2.jpg"
                         alt="Aliaksei Krasko"
                         width={580}
                         height={600}
-                        className="rounded-2xl object-cover w-full h-auto max-w-[380px] max-h-[450px] md:max-w-[580px] md:max-h-[600px]"
+                        className="rounded-2xl object-cover object-top"
                     />
                 </div>
                 <div className={`w-full md:w-2/3 flex flex-col px-4 md:px-8 transition-all duration-700 ${show ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
