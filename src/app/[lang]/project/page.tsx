@@ -8,7 +8,7 @@ export default async function ProjectPage({ params: { lang } }: { params: { lang
     const projects: Project[] = dict.projects;
 
     return (
-        <main className="min-h-screen py-10 text-white font-montserrat">
+        <main className="min-h-screen py-10 px-5 text-white font-montserrat">
             <FadeIn delay={100}>
                 <h1 className="text-center text-3xl md:text-4xl text-[#3B3B3B] mb-10 font-bold home-text">
                     {dict.title}
