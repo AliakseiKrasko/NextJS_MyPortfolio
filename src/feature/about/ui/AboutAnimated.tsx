@@ -47,7 +47,7 @@ export const AboutAnimated: FC<Props> = ({ title, paragraphs, photoAlt }) => {
                         loaded ? "opacity-100 scale-100" : "opacity-0 scale-95"
                     } transition-all duration-1000 delay-300`}
                 >
-                    <div className="rounded-3xl overflow-hidden border-2 border-lime-400/30 w-[400px] h-[500px]">
+                    <div className="rounded-3xl overflow-hidden border-2 border-lime-400/30 w-full max-w-[90vw] h-auto aspect-[4/5] mx-auto md:w-[400px] md:h-[500px]">
                         <Image
                             src="/my-photo2.jpg"
                             alt={photoAlt}
