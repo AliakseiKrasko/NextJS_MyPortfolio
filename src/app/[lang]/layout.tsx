@@ -12,7 +12,6 @@ export default async function Layout({
     const dictionary = {
         ...await getTranslations(lang, 'common'),
         ...await getTranslations(lang, 'cv'),
-        // ...await getTranslations(lang, 'cv'), // если нужно
     };
 
     return (
