@@ -69,7 +69,7 @@ export const Header = ({ lang, dictionary }: Props) => {
             </nav>
 
             {/* Theme и Language переключатели */}
-            <div className={`items-center gap-2 ${mobileOpen ? "hidden" : "flex"} lg:flex`}>
+            <div className="hidden lg:flex items-center gap-2">
                 <ThemeSwitcher dict={dictionary.themeSwitcher} />
                 <LanguageSwitcher currentLang={lang} />
             </div>
