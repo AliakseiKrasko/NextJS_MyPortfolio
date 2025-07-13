@@ -16,16 +16,16 @@
       "image": "/2.png"
     },
     {
-      "title": "CRM application system",
-      "description": "The CRM Application for Requests is an internal web application for an online education center, designed for receiving, tracking, and processing enrollment requests for various IT courses.",
-      "link": "https://github.com/AliakseiKrasko/project_CRM",
+      "title": "TaskFlow",
+      "description": "TaskFlow is a modern web application for task management (TodoList), built with React, Redux Toolkit, and RTK Query. The project features full user authentication and authorization, ensuring secure personal data protection and controlled access to tasks.",
+      "link": "https://github.com/AliakseiKrasko/ToDoList_React",
       "image": "/3.png"
     },
     {
-      "title": "UI-kit library",
-      "description": "A UI-kit library is a professionally designed set of user interface components for use in commercial web applications.\nThe library provides a consistent style, enables rapid interface development, and accelerates the overall product development process.",
-      "link": "https://github.com/ictroot70/ui-kit",
-      "image": "/6.png"
+      "title": "Commercial Social Network (Project in Development)",
+      "description": "Commercial Social Network (Project in Development) is a multifunctional platform designed for effective interaction between businesses and clients, as well as for promoting products and services in the digital space. The project is currently in an active development phase. I am involved in all stages: from architecture design and user scenarios to frontend implementation and backend integration. I am working on creating a product that can take business communication and promotion to a new level.",
+      "link": "https://github.com/ictroot70/Ict/tree/auth",
+      "image": "/8.png"
     }
   ]
 }
