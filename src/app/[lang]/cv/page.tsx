@@ -15,3 +15,4 @@ export default async function SMPage({ params: { lang } }: { params: { lang: Loc
     const dict: SmDict = await getTranslations(lang, 'sm');
     return <SmAnimated dict={dict} />;
 }
+

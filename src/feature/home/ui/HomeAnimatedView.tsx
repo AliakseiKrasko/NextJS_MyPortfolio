@@ -9,7 +9,6 @@ export default function HomeAnimatedView({
                                              show,
                                              typewriterWords,
                                              description,
-                                             common,
                                          }: HomeAnimatedViewProps) {
     return (
         <div className={`relative overflow-hidden transition-all duration-700 ${show ? 'opacity-100' : 'opacity-0'}`}>
@@ -51,7 +50,7 @@ export default function HomeAnimatedView({
                             Send message
                         </Link>
                         <a
-                            href="/Alex%20Krasko%20(1).pdf"
+                            href="/CV.pdf"
                             download
                             className="border-2 border-[#b9ff39] text-[#b9ff39] px-6 py-3 rounded-md font-bold flex items-center gap-2 transition hover:bg-[#b9ff39] hover:text-black"
                         >

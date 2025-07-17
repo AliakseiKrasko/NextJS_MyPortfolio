@@ -1,8 +1,5 @@
-import Image from "next/image";
 
-type Props = {};
-
-export const Footer = (props: Props) => {
+export const Footer = () => {
     return (
         <footer className="w-full text-center text-gray-400 text-xs py-4 mt-16">
             © {new Date().getFullYear()} Krasko Aliaksei |

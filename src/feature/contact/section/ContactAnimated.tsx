@@ -36,7 +36,6 @@ const ContactAnimated: React.FC<Props> = ({ dict }) => {
                     </div>
                     <div className="mb-6">
                         <h2 className="text-xl font-semibold mb-4">{dict.messageForm.title}</h2>
-                        {/* !!! Важно: теперь передаём только messageForm */}
                         <ContactForm dict={dict.messageForm} />
                     </div>
                     <div>

@@ -1,22 +1,21 @@
 import { Header } from '@/common/components/header/Header';
-import { Locale, getTranslations } from '../../../i18n-config';
-import { Footer } from "@/common/components/footer/Footer";
+import { Footer } from '@/common/components/footer/Footer';
+import {getTranslations} from "../../../i18n-config";
 
-export default async function Layout({
-                                         children,
-                                         params: { lang },
-                                     }: {
+interface LayoutProps {
     children: React.ReactNode;
-    params: { lang: Locale };
-}) {
+    params: { lang: 'ru' | 'en' };
+}
+
+export default async function Layout({ children, params }: LayoutProps) {
     const dictionary = {
-        ...await getTranslations(lang, 'common'),
-        ...await getTranslations(lang, 'cv'),
+        ...await getTranslations(params.lang, 'common'),
+        ...await getTranslations(params.lang, 'cv'),
     };
 
     return (
         <div className="min-h-screen flex flex-col">
-            <Header lang={lang} dictionary={dictionary} />
+            <Header lang={params.lang} dictionary={dictionary} />
             <main className="flex-1 mt-16">{children}</main>
             <Footer />
         </div>

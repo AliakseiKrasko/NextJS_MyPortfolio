@@ -21,7 +21,7 @@ export const Typewriter = ({ text, speed = 100 }: Props) => {
     }, [index, text, speed]);
 
     useEffect(() => {
-        setIndex(0); // сброс при смене текста
+        setIndex(0);
     }, [text]);
 
     return (

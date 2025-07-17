@@ -14,3 +14,4 @@ export default async function ContactPage({ params: { lang } }: { params: { lang
     const dict = await getTranslations(lang, 'contact');
     return <ContactAnimated dict={dict} />;
 }
+

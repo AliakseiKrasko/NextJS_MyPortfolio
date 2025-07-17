@@ -5,3 +5,4 @@ export default async function HomePage({ params: { lang } }: { params: { lang: L
     const common = await getTranslations(lang, 'common');
     return <HomeAnimated lang={lang} common={common} />;
 }
+

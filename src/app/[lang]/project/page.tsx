@@ -31,3 +31,4 @@ export default async function ProjectPage({ params: { lang } }: { params: { lang
         </main>
     );
 }
+

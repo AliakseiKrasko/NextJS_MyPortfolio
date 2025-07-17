@@ -1,18 +1,24 @@
-import { Locale, getTranslations } from '../../../../i18n-config';
+import {getTranslations, Locale} from '../../../../i18n-config';
 import {AboutAnimated} from "@/feature/about/ui/AboutAnimated";
 import {AboutDict} from "@/feature/about/type/type";
 
+type PageProps  = {
+    params: { lang: Locale }
+};
 
-export async function generateMetadata({ params: { lang } }: { params: { lang: Locale } }) {
-    const dict: AboutDict = await getTranslations(lang, 'about');
+export async function generateMetadata({ params }: PageProps ) {
+    const dict: AboutDict = await getTranslations(params.lang, 'about');
     return {
         title: dict.title,
         description: `${dict.title} - About page`,
     };
 }
 
-export default async function AboutPage({ params: { lang } }: { params: { lang: Locale } }) {
-    const dict: AboutDict = await getTranslations(lang, 'about');
+export default async function AboutPage({ params }: PageProps ) {
+    if (params.lang !== 'ru' && params.lang !== 'en') {
+        throw new Error('Unknown lang');
+    }
+    const dict: AboutDict = await getTranslations(params.lang, 'about');
 
     return (
         <AboutAnimated
@@ -22,3 +28,5 @@ export default async function AboutPage({ params: { lang } }: { params: { lang: 
         />
     );
 }
+
+

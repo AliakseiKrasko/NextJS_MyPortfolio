@@ -6,14 +6,11 @@ export function ThemeSwitcher({ dict }: { dict: { light: string; dark: string } 
     const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
-    // После маунта компонента на клиенте выставляем mounted = true
     useEffect(() => {
         setMounted(true);
     }, []);
 
     if (!mounted) {
-        // Пока не смонтировано на клиенте — не рендерим ничего,
-        // чтобы избежать гидрационных ошибок
         return null;
     }
 

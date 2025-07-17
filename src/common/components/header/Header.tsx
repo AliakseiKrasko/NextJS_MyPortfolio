@@ -10,7 +10,7 @@ import { HiMenu, HiX } from "react-icons/hi";
 
 type Props = {
     lang: Locale;
-    dictionary: {
+    dictionary?: {
         header: {
             home: string;
             contact: string;
@@ -27,10 +27,12 @@ type Props = {
 };
 
 export const Header = ({ lang, dictionary }: Props) => {
+
     const [mobileOpen, setMobileOpen] = useState(false);
     const pathname = usePathname();
 
-    // Список пунктов меню и их пути
+    if (!dictionary) return null
+
     const navLinks = [
         { href: `/${lang}`, label: dictionary.header.home },
         { href: `/${lang}/contact`, label: dictionary.header.contact },
@@ -46,7 +48,6 @@ export const Header = ({ lang, dictionary }: Props) => {
                 {dictionary.general.projectName}
             </Link>
 
-            {/* Кнопка меню (только на мобилках) */}
             <button
                 className="lg:hidden ml-auto text-3xl"
                 onClick={() => setMobileOpen(!mobileOpen)}
@@ -55,7 +56,6 @@ export const Header = ({ lang, dictionary }: Props) => {
                 {mobileOpen ? <HiX /> : <HiMenu />}
             </button>
 
-            {/* Навигация (Desktop) */}
             <nav className="hidden lg:flex items-center gap-6 flex-1 justify-center">
                 {navLinks.map(link => (
                     <Link
@@ -68,13 +68,11 @@ export const Header = ({ lang, dictionary }: Props) => {
                 ))}
             </nav>
 
-            {/* Theme и Language переключатели */}
             <div className="hidden lg:flex items-center gap-2">
                 <ThemeSwitcher dict={dictionary.themeSwitcher} />
                 <LanguageSwitcher currentLang={lang} />
             </div>
 
-            {/* Мобильное меню */}
             {mobileOpen && (
                 <nav className="absolute top-full left-0 right-0 flex flex-col items-center gap-4 bg-black/90 py-6 z-50 lg:hidden">
                     {navLinks.map(link => (
