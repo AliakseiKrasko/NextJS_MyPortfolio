@@ -52,7 +52,7 @@ export default function HomeAnimatedView({
                         <a
                             href="/CV.pdf"
                             download
-                            className="border-2 border-[#b9ff39] text-[#b9ff39] px-6 py-3 rounded-md font-bold flex items-center gap-2 transition hover:bg-[#b9ff39] hover:text-black"
+                            className="border-2 border-[#7C63C4] text-black px-6 py-3 rounded-md font-bold flex items-center gap-2 transition bg-[#B7BFFE] "
                         >
                             <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                 <path d="M12 5v12" />
