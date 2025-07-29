@@ -63,7 +63,7 @@
       "Used Storybook for visual testing and documentation of components.",
       "Applied TDD practices, writing unit and end-to-end tests (Jest, Cypress) to ensure code quality.",
       "Automated CI/CD processes with GitHub Actions, GitLab CI, and Jenkins.",
-      "Configured deployment and orchestration using Docker, Kubernetes, and cloud services (Vercel, Netlify, AWS).",
+      "Participated in deployment and orchestration of applications via Docker, Kubernetes, and cloud services (Vercel, Netlify, AWS).",
       "Improved code quality and stability through linting and auto-formatting (ESLint, Prettier).",
       "Enhanced performance and security by optimizing resource loading and implementing best practices (SSR/SSG, code splitting, a11y)."
     ]
