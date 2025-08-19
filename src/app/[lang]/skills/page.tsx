@@ -102,16 +102,8 @@ export default function SkillsPage() {
         { name: "Ant Design", icon: <SiAntdesign className="text-blue-500" size={40} /> },
         { name: "Swagger", icon: <SiSwagger className="text-yellow-400" size={40}/> },
         { name: "Postman", icon: <SiPostman className="text-orange-400" size={40}/> },
-        { name: "Prisma", icon: <SiPrisma className="text-black dark:text-white" size={40}/> },
-        { name: "Heroku", icon: <SiHeroku className="text-purple-700" size={40}/> },
         { name: "GitLab CI/CD", icon: <SiGitlab className="text-orange-500" size={40} /> },
-        { name: "PostgreSQL (basic skills)", icon: <SiPostgresql className="text-blue-700" size={40} /> },
         {name: "Docker (basic skills)", icon: <SiDocker className="text-blue-500" size={40}/>},
-        {name: "Jenkins (basic skills)", icon: <SiJenkins className="text-red-700" size={40}/>},
-        { name: "Kubernetes (basic skills)", icon: <SiKubernetes className="text-blue-500" size={40}/> },
-        { name: "NGINX (basic skills)", icon: <SiNginx className="text-green-700" size={40}/> },
-        { name: "Node.js (basic skills)", icon: <SiNodedotjs className="text-green-500" size={40}/> },
-        { name: "Express.js (basic skills)", icon: <SiExpress className="text-black dark:text-white" size={40}/> },
     ];
 
     const [show, setShow] = useState(false);
