@@ -17,7 +17,7 @@ import {
     SiJenkins,
     SiJest,
     SiJirasoftware,
-    SiKubernetes,
+    SiKubernetes, SiMongodb,
     SiNetlify,
     SiNextdotjs, SiNginx, SiNodedotjs,
     SiNotion,
@@ -104,6 +104,10 @@ export default function SkillsPage() {
         { name: "Postman", icon: <SiPostman className="text-orange-400" size={40}/> },
         { name: "GitLab CI/CD", icon: <SiGitlab className="text-orange-500" size={40} /> },
         {name: "Docker (basic skills)", icon: <SiDocker className="text-blue-500" size={40}/>},
+        { name: "Node.js (basic skills)", icon: <SiNodedotjs className="text-green-500" size={40} /> },
+        { name: "Express (basic skills)", icon: <SiExpress className="text-black dark:text-white" size={40} /> },
+        { name: "PostgreSQL (basic skills)", icon: <SiPostgresql className="text-blue-600" size={40} /> },
+        { name: "MongoDB (basic skills)", icon: <SiMongodb className="text-green-600" size={40} /> },
     ];
 
     const [show, setShow] = useState(false);
